@@ -5,7 +5,7 @@ const router   = express.Router();
 const Enquiry  = require("../models/Enquiry");
 const { generateOTP, hashOTP, verifyOTP, expiryDate } = require("../services/otpService");
 const { sendOTPEmail, sendOwnerNotificationEmail, sendStudentConfirmationEmail } = require("../services/emailService");
-const { sendOTPWhatsApp, sendOwnerWhatsApp, sendStudentWhatsApp } = require("../services/whatsappService");
+const { sendOwnerWhatsApp, sendStudentWhatsApp } = require("../services/whatsappService");
 const { validateEnquiry, validateOTPVerify } = require("../middleware/validate");
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -18,6 +18,14 @@ router.post("/submit", validateEnquiry, async (req, res) => {
 
     const { formType, name, phone, course, email = null, message = null } = req.body;
 
+    // Email is required — OTP only goes via email
+    if (!email) {
+      return res.status(422).json({
+        success: false,
+        message: "Email is required to receive OTP.",
+      });
+    }
+
     const cleanPhone = phone.replace(/\D/g, "").slice(-10);
     console.log("[/submit] Clean phone:", cleanPhone);
 
@@ -28,8 +36,8 @@ router.post("/submit", validateEnquiry, async (req, res) => {
       name:    name.trim(),
       phone:   cleanPhone,
       course:  course.trim(),
-      email:   email   ? email.trim().toLowerCase() : null,
-      message: message ? message.trim()             : null,
+      email:   email.trim().toLowerCase(),
+      message: message ? message.trim() : null,
       status:  "pending_otp",
     });
     console.log("[/submit] ✅ Saved to MongoDB. ID:", enquiry._id);
@@ -46,36 +54,18 @@ router.post("/submit", validateEnquiry, async (req, res) => {
 
     const expiryMinutes = parseInt(process.env.OTP_EXPIRY_MINUTES) || 10;
 
-    // ── Step 3: Send WhatsApp OTP ────────────────────────────────────────────
-    console.log("[/submit] Sending WhatsApp OTP to:", cleanPhone);
-    const deliveries = [
-      sendOTPWhatsApp({ phone: cleanPhone, name: name.trim(), otp, expiryMinutes })
-        .then(()  => console.log("[/submit] ✅ WhatsApp OTP sent"))
-        .catch((e) => console.error("[/submit] ❌ WhatsApp OTP FAILED:", e.message)),
-    ];
+    // ── Step 3: Send OTP via Email only ──────────────────────────────────────
+    console.log("[/submit] Sending Email OTP to:", email);
+    await sendOTPEmail({ to: email.trim(), name: name.trim(), otp, expiryMinutes })
+      .then(()  => console.log("[/submit] ✅ Email OTP sent"))
+      .catch((e) => console.error("[/submit] ❌ Email OTP FAILED:", e.message));
 
-    // ── Step 4: Send Email OTP (only if email provided) ──────────────────────
-    if (email) {
-      console.log("[/submit] Sending Email OTP to:", email);
-      deliveries.push(
-        sendOTPEmail({ to: email.trim(), name: name.trim(), otp, expiryMinutes })
-          .then(()  => console.log("[/submit] ✅ Email OTP sent"))
-          .catch((e) => console.error("[/submit] ❌ Email OTP FAILED:", e.message))
-      );
-    } else {
-      console.log("[/submit] No email provided — skipping email OTP");
-    }
-
-    console.log("[/submit] Waiting for OTP deliveries to settle...");
-    await Promise.allSettled(deliveries);
-    console.log("[/submit] ✅ All deliveries settled");
-
-    // ── Step 5: Respond ──────────────────────────────────────────────────────
+    // ── Step 4: Respond ──────────────────────────────────────────────────────
     console.log("[/submit] Sending 201 response...");
     return res.status(201).json({
       success:   true,
       enquiryId: enquiry._id,
-      message:   `OTP sent to WhatsApp${email ? " and email" : ""}. Verify to complete.`,
+      message:   "OTP sent to your email. Please verify to complete.",
       ...(process.env.NODE_ENV === "development" && { __dev_otp: otp }),
     });
 
@@ -117,20 +107,14 @@ router.post("/resend-otp", async (req, res) => {
     await enquiry.save();
     console.log("[/resend-otp] ✅ New OTP generated:", otp);
 
-    await Promise.allSettled([
-      sendOTPWhatsApp({ phone: enquiry.phone, name: enquiry.name, otp, expiryMinutes })
-        .then(()  => console.log("[/resend-otp] ✅ WhatsApp sent"))
-        .catch((e) => console.error("[/resend-otp] ❌ WhatsApp failed:", e.message)),
-      enquiry.email
-        ? sendOTPEmail({ to: enquiry.email, name: enquiry.name, otp, expiryMinutes })
-            .then(()  => console.log("[/resend-otp] ✅ Email sent"))
-            .catch((e) => console.error("[/resend-otp] ❌ Email failed:", e.message))
-        : Promise.resolve(),
-    ]);
+    // OTP only via email
+    await sendOTPEmail({ to: enquiry.email, name: enquiry.name, otp, expiryMinutes })
+      .then(()  => console.log("[/resend-otp] ✅ Email OTP sent"))
+      .catch((e) => console.error("[/resend-otp] ❌ Email OTP failed:", e.message));
 
     return res.json({
       success: true,
-      message: `New OTP sent to WhatsApp${enquiry.email ? " and email" : ""}`,
+      message: "New OTP sent to your email.",
       ...(process.env.NODE_ENV === "development" && { __dev_otp: otp }),
     });
 
@@ -178,27 +162,32 @@ router.post("/verify-otp", validateOTPVerify, async (req, res) => {
     await enquiry.save();
     console.log("[/verify-otp] ✅ Marked verified in DB");
 
-    console.log("[/verify-otp] Firing notifications...");
+    // ── Fire all lead notifications (email + WhatsApp both) ──────────────────
+    console.log("[/verify-otp] Firing lead notifications...");
     const [ownerWA, ownerEmail, studentWA, studentEmail] = await Promise.allSettled([
+      // Owner WhatsApp (Twilio)
       sendOwnerWhatsApp(enquiry)
         .then(()  => console.log("[/verify-otp] ✅ Owner WhatsApp sent"))
         .catch((e) => console.error("[/verify-otp] ❌ Owner WhatsApp failed:", e.message)),
+      // Owner Email
       sendOwnerNotificationEmail(enquiry)
         .then(()  => console.log("[/verify-otp] ✅ Owner Email sent"))
         .catch((e) => console.error("[/verify-otp] ❌ Owner Email failed:", e.message)),
+      // Student WhatsApp (Twilio)
       sendStudentWhatsApp(enquiry)
         .then(()  => console.log("[/verify-otp] ✅ Student WhatsApp sent"))
         .catch((e) => console.error("[/verify-otp] ❌ Student WhatsApp failed:", e.message)),
+      // Student confirmation email
       sendStudentConfirmationEmail(enquiry)
-        .then(()  => console.log("[/verify-otp] ✅ Student Email sent (or skipped)"))
+        .then(()  => console.log("[/verify-otp] ✅ Student Email sent"))
         .catch((e) => console.error("[/verify-otp] ❌ Student Email failed:", e.message)),
     ]);
 
     enquiry.notified = {
-      ownerWhatsApp:    ownerWA.status      === "fulfilled" && ownerWA.value?.success    !== false,
-      ownerEmail:       ownerEmail.status   === "fulfilled",
-      studentWhatsApp:  studentWA.status    === "fulfilled" && studentWA.value?.success  !== false,
-      studentEmail:     studentEmail.status === "fulfilled",
+      ownerWhatsApp:   ownerWA.status    === "fulfilled" && ownerWA.value?.success    !== false,
+      ownerEmail:      ownerEmail.status === "fulfilled",
+      studentWhatsApp: studentWA.status  === "fulfilled" && studentWA.value?.success  !== false,
+      studentEmail:    studentEmail.status === "fulfilled",
     };
     await enquiry.save();
     console.log("[/verify-otp] Notification results:", enquiry.notified);
