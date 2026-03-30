@@ -54,15 +54,15 @@ async function post(path, body) {
 
 export const submitEnquiry = (payload) => {
   console.log("[API] submitEnquiry called with:", payload);
-  return post("/api/enquiry/submit", payload);
+  return post("/enquiry/submit", payload);
 };
 
 export const verifyOTP = (payload) => {
   console.log("[API] verifyOTP called with:", payload);
-  return post("/api/enquiry/verify-otp", payload);
+  return post("/enquiry/verify-otp", payload);
 };
 
 export const resendOTP = (payload) => {
   console.log("[API] resendOTP called with:", payload);
-  return post("/api/enquiry/resend-otp", payload);
+  return post("/enquiry/resend-otp", payload);
 };
