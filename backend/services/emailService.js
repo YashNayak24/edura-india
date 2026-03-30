@@ -1,5 +1,5 @@
 // services/emailService.js
-const nodemailer = require("nodemailer");
+const { Resend } = require("resend");
 
 // ── Debug helper ─────────────────────────────────────────────────────────────
 function log(tag, msg, data) {
@@ -11,40 +11,22 @@ function log(tag, msg, data) {
   }
 }
 
-// ── Log SMTP config on startup ───────────────────────────────────────────────
-log("CONFIG", "SMTP settings loaded", {
-  host:   process.env.SMTP_HOST   || "smtp.gmail.com",
-  port:   parseInt(process.env.SMTP_PORT) || 587,
-  secure: process.env.SMTP_SECURE === "true",
-  user:   process.env.SMTP_USER   || "NOT SET ❌",
-  pass:   process.env.SMTP_PASS   ? "SET ✅" : "NOT SET ❌",
-  ownerEmail: process.env.OWNER_EMAIL || "NOT SET ❌",
+// ── Resend client ─────────────────────────────────────────────────────────────
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+// ── Log config on startup ────────────────────────────────────────────────────
+log("CONFIG", "Resend config loaded", {
+  apiKey:     process.env.RESEND_API_KEY ? "SET ✅" : "NOT SET ❌",
+  from:       process.env.EMAIL_FROM     || "onboarding@resend.dev (default)",
+  ownerEmail: process.env.OWNER_EMAIL    || "NOT SET ❌",
 });
 
-// ── Transporter ─────────────────────────────────────────────────────────────
-const transporter = nodemailer.createTransport({
-  host:   process.env.SMTP_HOST   || "smtp.gmail.com",
-  port:   parseInt(process.env.SMTP_PORT) || 587,
-  secure: process.env.SMTP_SECURE === "true",   // false for port 587
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-  connectionTimeout: 10000,   // 10s
-  greetingTimeout:   10000,
-  socketTimeout:     15000,
-});
-
-// ── Verify transporter connection on startup ─────────────────────────────────
-transporter.verify((err, success) => {
-  if (err) {
-    log("VERIFY", "❌ SMTP connection FAILED", err.message);
-  } else {
-    log("VERIFY", "✅ SMTP connection OK — ready to send emails");
-  }
-});
-
-const FROM = `"Edura Institute" <${process.env.SMTP_USER}>`;
+// ── FROM address ─────────────────────────────────────────────────────────────
+// Jab tak domain verify nahi → onboarding@resend.dev
+// Domain verify hone ke baad → EMAIL_FROM=noreply@eduraindia.com set karo
+const FROM = process.env.EMAIL_FROM
+  ? `"Edura Institute" <${process.env.EMAIL_FROM}>`
+  : "Edura Institute <onboarding@resend.dev>";
 
 // ════════════════════════════════════════════════════════════════════════════
 //  1.  OTP EMAIL
@@ -75,19 +57,18 @@ async function sendOTPEmail({ to, name, otp, expiryMinutes = 10 }) {
   </div>`;
 
   try {
-    log("OTP", "⏳ Connecting to SMTP server...");
     const start = Date.now();
-    const info = await transporter.sendMail({
+    const { data, error } = await resend.emails.send({
       from:    FROM,
       to,
       subject: `${otp} — Your Edura OTP`,
       html,
     });
-    const ms = Date.now() - start;
-    log("OTP", `✅ OTP email SENT in ${ms}ms`, { messageId: info.messageId, to });
-    return info;
+    if (error) { log("OTP", `❌ FAILED`, { error: error.message, to }); throw new Error(error.message); }
+    log("OTP", `✅ SENT in ${Date.now() - start}ms`, { id: data.id, to });
+    return data;
   } catch (err) {
-    log("OTP", `❌ OTP email FAILED`, { error: err.message, code: err.code, to });
+    log("OTP", `❌ ERROR`, { error: err.message, to });
     throw err;
   }
 }
@@ -143,17 +124,17 @@ async function sendOwnerNotificationEmail(enquiry) {
 
   try {
     const start = Date.now();
-    const info = await transporter.sendMail({
-      from: FROM,
-      to:   process.env.OWNER_EMAIL,
+    const { data, error } = await resend.emails.send({
+      from:    FROM,
+      to:      process.env.OWNER_EMAIL,
       subject: `🎓 New ${formLabel} Lead — ${name} (${course})`,
       html,
     });
-    const ms = Date.now() - start;
-    log("OWNER", `✅ Owner email SENT in ${ms}ms`, { messageId: info.messageId });
-    return info;
+    if (error) { log("OWNER", `❌ FAILED`, { error: error.message }); throw new Error(error.message); }
+    log("OWNER", `✅ SENT in ${Date.now() - start}ms`, { id: data.id });
+    return data;
   } catch (err) {
-    log("OWNER", `❌ Owner email FAILED`, { error: err.message, code: err.code });
+    log("OWNER", `❌ ERROR`, { error: err.message });
     throw err;
   }
 }
@@ -210,19 +191,19 @@ async function sendStudentConfirmationEmail(enquiry) {
 
   try {
     const start = Date.now();
-    const info = await transporter.sendMail({
-      from: FROM,
-      to:   email,
+    const { data, error } = await resend.emails.send({
+      from:    FROM,
+      to:      email,
       subject: isDemo
         ? `🎓 Demo Class Booked — ${course} | Edura Institute`
         : `✅ Enquiry Received — ${course} | Edura Institute`,
       html,
     });
-    const ms = Date.now() - start;
-    log("STUDENT", `✅ Student confirmation SENT in ${ms}ms`, { messageId: info.messageId });
-    return info;
+    if (error) { log("STUDENT", `❌ FAILED`, { error: error.message }); throw new Error(error.message); }
+    log("STUDENT", `✅ SENT in ${Date.now() - start}ms`, { id: data.id });
+    return data;
   } catch (err) {
-    log("STUDENT", `❌ Student confirmation FAILED`, { error: err.message, code: err.code });
+    log("STUDENT", `❌ ERROR`, { error: err.message });
     throw err;
   }
 }
