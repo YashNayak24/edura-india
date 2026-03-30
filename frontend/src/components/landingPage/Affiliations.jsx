@@ -172,7 +172,7 @@ export default function Affiliations() {
               <div
                 key={i}
                 className="flex items-center gap-2.5 bg-white/85 border border-blue-100 rounded-2xl px-4 py-3 mx-2 cursor-default transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
-                style={{ minWidth: 180 }}
+                style={{ minWidth: 160, flexShrink: 0 }}
               >
                 <span className="text-base font-black" style={{ color: "#094E93" }}>{a.abbr}</span>
                 <span className="w-px h-7 bg-gray-200 shrink-0" />

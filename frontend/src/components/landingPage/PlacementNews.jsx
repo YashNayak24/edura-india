@@ -100,7 +100,7 @@ export default function PlacementNews() {
                   hover:-translate-y-[3px]
                   hover:shadow-lg"
                 style={{
-                  minWidth: "238px",
+                  minWidth: "200px",
                   background: "rgba(255,255,255,0.82)",
                   backdropFilter: "blur(14px)",
                   WebkitBackdropFilter: "blur(14px)",

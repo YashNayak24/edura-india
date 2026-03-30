@@ -55,7 +55,7 @@ const steps = [
 export default function PlacementSteps() {
   return (
     <section
-      className="w-full py-16 sm:py-16px-4"
+      className="w-full py-16 sm:py-16 px-4"
       style={{ background: "linear-gradient(160deg, #eef2ff 0%, #e8edff 100%)" }}
     >
       <div className="max-w-5xl mx-auto">
