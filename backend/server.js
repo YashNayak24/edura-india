@@ -15,7 +15,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({ origin: [
     "http://localhost:5173",
     "https://edura-india.vercel.app",
-    "https://www.eduraindia.com"
+    "https://www.eduraindia.com",
+    "https://eduraindia.com"
   ],
   credentials: true }));
 app.use(express.json());
