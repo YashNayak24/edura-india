@@ -5,7 +5,7 @@ const branches = [
   {type:'Registered Office',addr:'H-18/B, 2nd Floor, Kalkaji Main Road, New Delhi-110019',phone:'+91 99999 12345'},
   {type:'Branch Office',addr:'Nirman Vihar, East Delhi - 110092',phone:'+91 99991 99651'},
 ];
-const certs = ['ISO 9001:2015','NSDC Partner','Skill India','NIELIT'];
+const certs = ['Award-Winning Institute','Trusted Since 2015','20,000+ Students','100% Placement Support'];
 
 export default function Footer() {
   return (
@@ -25,7 +25,7 @@ export default function Footer() {
                 <div className="text-[10px] text-white/40 uppercase tracking-widest font-medium">Institute of Excellence</div>
               </div>
             </div>
-            <p className="text-[13px] text-white/45 leading-[1.78] font-medium mb-5">SkillEdge is a premier training organisation committed to empowering learners with future-ready skills. An ISO 9001:2015 Certified Institute and approved training partner of NSDC.</p>
+            <p className="text-[13px] text-white/45 leading-[1.78] font-medium mb-5">SkillEdge is a premier training organisation committed to empowering learners with future-ready skills — trusted by 20,000+ students across Delhi NCR.</p>
             <div className="flex flex-wrap gap-2 mb-5">
               {certs.map(c => (
                 <div key={c} className="flex items-center gap-1.5 bg-white/5 border border-white/8 rounded-[7px] px-2.5 py-1.5 text-[10.5px] font-semibold text-white/50">
