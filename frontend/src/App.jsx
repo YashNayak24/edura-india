@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import TopBar from './components/common/TopBar';
