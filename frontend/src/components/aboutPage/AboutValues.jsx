@@ -25,11 +25,11 @@ const TEAM = [
 
 /* ── Certification badges ── */
 const CERTS = [
-  { icon: <IconTrophy size={22} color="#F5A623" />, title: "ISO 9001:2015",  sub: "Quality Certified"   },
-  { icon: <IconShield size={22} color="#094E93" />, title: "NSDC Approved",  sub: "Govt. of India"      },
-  { icon: <IconGlobe  size={22} color="#4285F4" />, title: "Google Partner", sub: "Certified Training"  },
-  { icon: <IconBook   size={22} color="#1877F2" />, title: "Meta Blueprint", sub: "Marketing Partner"   },
-  { icon: <IconStar   size={22} color="#F5A623" />, title: "4.9★ Rating",    sub: "Google Reviews"      },
+  { icon: <IconTrophy size={22} color="#F5A623" />, title: "Adobe Certified",   sub: "Creative Trainer"    },
+  { icon: <IconShield size={22} color="#094E93" />, title: "Microsoft Partner", sub: "Learn Programme"     },
+  { icon: <IconGlobe  size={22} color="#4285F4" />, title: "Google Partner",    sub: "Certified Training"  },
+  { icon: <IconBook   size={22} color="#1877F2" />, title: "Meta Blueprint",    sub: "Marketing Partner"   },
+  { icon: <IconStar   size={22} color="#F5A623" />, title: "4.9★ Rating",       sub: "Google Reviews"      },
 ];
 
 export default function AboutValues() {

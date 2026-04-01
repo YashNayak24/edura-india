@@ -31,8 +31,8 @@ export default function AboutHero() {
             </h1>
 
             <p className="fade-up-3 text-gray-500 text-[clamp(15px,1.5vw,17px)] leading-[1.8] mb-8 max-w-[480px]">
-              Founded in Delhi NCR, SkillEdge is a government-recognised skill training
-              institute dedicated to bridging the gap between education and industry. We
+              Founded in Delhi NCR, SkillEdge is an industry-leading skill training
+              institute dedicated to bridging the gap between education and employment. We
               don't just teach — we place, mentor, and support until you land your dream job.
             </p>
 
@@ -48,10 +48,10 @@ export default function AboutHero() {
             {/* Trust badges */}
             <div className="fade-up-3 mt-7 flex flex-wrap gap-4 items-center">
               <span className="text-[12px] font-semibold text-gray-400 flex items-center gap-1.5">
-                <IconTrophy size={14} color="#F5A623" /> ISO 9001:2015
+                <IconTrophy size={14} color="#F5A623" /> Adobe Certified
               </span>
               <span className="text-[12px] font-semibold text-gray-400 flex items-center gap-1.5">
-                <IconShield size={14} color="#094E93" /> NSDC Approved
+                <IconShield size={14} color="#094E93" /> Microsoft Partner
               </span>
               <span className="text-[12px] font-semibold text-gray-400 flex items-center gap-1.5">
                 <IconStar size={14} color="#F5A623" /> 4.9★ Google Rating
@@ -84,17 +84,17 @@ export default function AboutHero() {
 
             {/* Badge — ISO */}
             <div className="float-slow absolute left-[-32px] top-10 z-20 bg-white rounded-2xl px-4 py-3 shadow-[0_8px_32px_rgba(9,78,147,.16)] border border-gray-100">
-              <div className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider">ISO Certified</div>
+              <div className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider">Adobe Certified</div>
               <div className="text-[14px] font-black text-[#094E93] flex items-center gap-1 mt-0.5">
-                <IconTrophy size={13} color="#094E93" /> 9001:2015 ✓
+                <IconTrophy size={13} color="#094E93" /> Trainer ✓
               </div>
             </div>
 
-            {/* Badge — NSDC */}
+            {/* Badge — Industry */}
             <div className="float absolute right-[-16px] bottom-14 z-20 bg-[#F5A623] rounded-2xl px-4 py-3 shadow-[0_8px_20px_rgba(245,166,35,.3)]">
-              <div className="text-[10px] text-white/75 font-semibold uppercase tracking-wider">NSDC Approved</div>
+              <div className="text-[10px] text-white/75 font-semibold uppercase tracking-wider">Industry Certified</div>
               <div className="text-[14px] font-black text-white flex items-center gap-1 mt-0.5">
-                <IconShield size={13} color="white" /> Govt. Certified
+                <IconShield size={13} color="white" /> Globally Recognized
               </div>
             </div>
 

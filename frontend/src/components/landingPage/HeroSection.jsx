@@ -285,7 +285,7 @@ export default function HeroSection() {
           style={{ fontSize: "clamp(13px, 1.4vw, 17px)" }}>
           From <strong className="text-[#0D1E42] font-bold">Coding &amp; Web Dev</strong> to{" "}
           <strong className="text-[#0D1E42] font-bold">Digital Marketing, Graphic Design</strong> and{" "}
-          <strong className="text-[#0D1E42] font-bold">Stock Market</strong> — SkillEdge offers
+          <strong className="text-[#0D1E42] font-bold">Stock Market</strong> — Edura offers
           industry-ready courses with 100% placement assistance.
         </p>
 

@@ -2,7 +2,6 @@ import ContactHero    from './components/contactPage/ContactHero'
 import ContactCards   from './components/contactPage/ContactCards'
 import MainGrid       from './components/contactPage/MainGrid'
 import BottomSection  from './components/contactPage/BottomSection'
-import WaFloat        from './components/contactPage/WaFloat'
 
 export default function Contact() {
   return (
@@ -13,7 +12,6 @@ export default function Contact() {
         <MainGrid />
         <BottomSection />
       </div>
-      <WaFloat />
     </div>
   )
 }

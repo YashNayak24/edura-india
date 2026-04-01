@@ -32,7 +32,7 @@ export default function ContactHero() {
 
         <h1 className="font-black tracking-[-0.04em] leading-[1.06] text-[#0D1E42] mb-[14px] max-w-[640px]"
           style={{ fontSize:"clamp(30px,5vw,58px)" }}>
-          Get in Touch<br/>with <span className="text-[#094E93]">SkillEdge</span>.
+          Get in Touch<br/>with <span className="text-[#094E93]">Edura</span>.
         </h1>
 
         <p className="text-[15.5px] text-[#5A6A8A] font-medium leading-[1.75] max-w-[500px] mb-7">
@@ -40,7 +40,7 @@ export default function ContactHero() {
         </p>
 
         <div className="flex flex-wrap gap-2">
-          {["ISO 9001:2015 Certified","NSDC Approved","4.9★ Google Rating","20,000+ Students"].map(c => (
+          {["Award-Winning Institute","Trusted Since 2015","4.9★ Google Rating","20,000+ Students"].map(c => (
             <span key={c} className="inline-flex items-center gap-[6px] bg-white border border-[#DDE5F8]
               rounded-full px-[13px] py-[5px] text-[11px] font-bold text-[#5A6A8A]
               shadow-[0_1px_4px_rgba(9,78,147,.06)]">

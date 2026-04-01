@@ -3,8 +3,8 @@ import { IconUsers, IconBook, IconTrend, IconStar, IconClock, IconHome } from ".
 
 /* ── Marquee items ── */
 const MARQUEE_ITEMS = [
-  "ISO 9001:2015 Certified",
-  "NSDC Approved",
+  "Adobe Certified Trainers",
+  "Microsoft Learn Partner",
   "4.9★ Google Rating",
   "20,000+ Students Placed",
   "100% Placement Assistance",

@@ -3,8 +3,8 @@ import { IconTarget, IconGlobe } from "./icons";
 
 const TIMELINE = [
   { year: "2018", title: "Founded in Delhi NCR",      desc: "Started with 3 courses and a vision to make quality skill training accessible to all." },
-  { year: "2020", title: "NSDC Partnership",           desc: "Became NSDC approved and launched government-certified programs nationwide." },
-  { year: "2022", title: "ISO 9001:2015 Certified",    desc: "Achieved ISO certification and expanded to 50+ courses across 8 verticals." },
+  { year: "2020", title: "Industry Partnerships",      desc: "Partnered with Adobe, Microsoft & Google to launch globally certified training programs." },
+  { year: "2022", title: "125+ Courses Launched",      desc: "Expanded to 125+ courses across 8 career verticals with AI-integrated curriculum." },
   { year: "2024", title: "20,000+ Students Placed",    desc: "Crossed the milestone with an industry-leading 94% placement success rate." },
 ];
 

@@ -2,23 +2,23 @@
 // Non-standard values (clamp, gradients, animations) use inline style where needed
 
 const affiliations = [
-  { abbr: "CSC",  name: "CSC Academy",   tag: "Digital Access"     },
-  { abbr: "SI",   name: "Skill India",   tag: "Govt. Initiative"   },
-  { abbr: "NSDC", name: "NSDC",          tag: "Nat. Skill Dev."    },
-  { abbr: "NE",   name: "NIELIT",        tag: "Electronics"        },
-  { abbr: "ISO",  name: "ISO 9001:2015", tag: "Quality Cert."      },
-  { abbr: "DI",   name: "Digital India", tag: "Innovation"         },
-  { abbr: "TL",   name: "Tally",         tag: "Authorized Partner" },
-  { abbr: "PM",   name: "PMKVY",         tag: "Skill Mission"      },
-  { abbr: "VJ",   name: "Vidyanjali",    tag: "Education"          },
+  { abbr: "TL",   name: "Tally",           tag: "Authorized Partner" },
+  { abbr: "AC",   name: "Adobe Creative",  tag: "Certified Trainer"  },
+  { abbr: "MS",   name: "Microsoft",       tag: "Learn Partner"      },
+  { abbr: "GG",   name: "Google",          tag: "Career Cert."       },
+  { abbr: "HB",   name: "HubSpot",         tag: "Marketing"          },
+  { abbr: "AW",   name: "AWS",             tag: "Cloud Skills"       },
+  { abbr: "CN",   name: "Coursera",        tag: "Edu. Partner"       },
+  { abbr: "MT",   name: "Meta",            tag: "Digital Ads"        },
+  { abbr: "UD",   name: "Udemy",           tag: "Content Partner"    },
 ];
 const doubled = [...affiliations, ...affiliations];
 
 const pills = [
   "⭐ Best Computer Institute in Delhi",
-  "NSDC Partner", "Skill India", "Digital India",
-  "CSC Academy", "NIELIT Certified", "ISO 9001:2015",
-  "Tally Institute", "PMKVY", "Vidyanjali",
+  "Tally Authorized", "Adobe Certified", "Microsoft Partner",
+  "Google Career Cert.", "HubSpot Academy", "AWS Educate",
+  "Meta Blueprint", "Coursera Partner", "100% Placement",
 ];
 
 const miniCards = [
@@ -28,8 +28,8 @@ const miniCards = [
         <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
       </svg>
     ),
-    h: "ISO Certified",
-    p: "Quality assured education since establishment.",
+    h: "Industry Certified",
+    p: "Certifications backed by global industry leaders.",
   },
   {
     icon: (
@@ -37,8 +37,8 @@ const miniCards = [
         <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
       </svg>
     ),
-    h: "DU Affiliated",
-    p: "Academic recognition from Delhi University colleges.",
+    h: "Expert Trainers",
+    p: "Faculty with 5–15 years of real industry experience.",
   },
   {
     icon: (
@@ -59,7 +59,7 @@ const miniCards = [
       </svg>
     ),
     h: "9+ Certifications",
-    p: "Every course backed by national bodies.",
+    p: "Every course backed by recognized global partners.",
   },
 ];
 
@@ -100,11 +100,11 @@ export default function Affiliations() {
               className="font-extrabold text-slate-900 leading-tight mb-2.5"
               style={{ fontSize: "clamp(26px,4vw,46px)", letterSpacing: "-1.5px" }}
             >
-              Affiliated with India's Most<br />
-              <em className="not-italic" style={{ color: "#094E93" }}>Trusted Authorities</em>
+              Partnered with the World's Most<br />
+              <em className="not-italic" style={{ color: "#094E93" }}>Trusted Industry Leaders</em>
             </h2>
             <p className="text-sm text-gray-500 font-medium">
-              NSDC · Skill India · Digital India · CSC Academy · NIELIT · Tally · PMKVY · Vidyanjali
+              Tally · Adobe · Microsoft · Google · HubSpot · AWS · Meta · Coursera · Udemy
             </p>
           </div>
 
@@ -114,13 +114,13 @@ export default function Affiliations() {
             style={{ background: "linear-gradient(135deg,#073E75,#094E93)" }}
           >
             <p className="text-xs font-bold tracking-widest uppercase text-white/50 mb-2">
-              Our Affiliations
+              Our Industry Partners
             </p>
             <h3 className="text-2xl font-extrabold text-white leading-snug mb-2.5">
-              ISO 9001:2015 Certified Institute
+              Globally Recognized Certifications
             </h3>
             <p className="text-sm text-white/70 leading-relaxed mb-5 max-w-2xl">
-              Backed by India's most trusted government and skill development bodies — every certificate industry recognized.
+              Every course is backed by world-class industry partners — your certificate is recognized by top employers across India and abroad.
             </p>
             <div className="flex flex-wrap gap-2">
               {pills.map((p, i) => (
@@ -187,12 +187,12 @@ export default function Affiliations() {
 
         {/* Stars bar */}
         <div className="max-w-6xl mx-auto px-7">
-          <div className="mt-6 bg-white/80 border border-blue-100 rounded-2xl px-6 py-4 flex  items-center gap-4 shadow-sm">
+          <div className="mt-6 bg-white/80 border border-blue-100 rounded-2xl px-6 py-4 flex items-center gap-4 shadow-sm">
             <div className="flex gap-0.5 shrink-0">
               {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              <strong style={{ color: "#094E93" }}>ISO 9001:2015 Certified</strong> — Awarded the best computer course institute in Delhi. All certificates backed by leading industry partners.
+              <strong style={{ color: "#094E93" }}>Globally Recognized Certificates</strong> — Awarded the best computer course institute in Delhi. All certifications backed by leading industry partners like Adobe, Microsoft & Google.
             </p>
           </div>
         </div>

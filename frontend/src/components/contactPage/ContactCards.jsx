@@ -17,7 +17,7 @@ const CARDS = [
         <polyline points="22,6 12,13 2,6"/>
       </svg>
     ),
-    label:"Email Us", main:"hello@skilledge.in", sub:"Reply within 4–6 hours",
+    label:"Email Us", main:"Indiaedura@gmail.com", sub:"Reply within 4–6 hours",
     href:"mailto:hello@skilledge.in", linkTxt:"Send Email", linkColor:"#D97706",
   },
   {

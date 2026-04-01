@@ -41,11 +41,11 @@ const BENTO = [
   //   iconBg: "bg-purple-100",
   //   icon: <IconAcademic size={22} color="#7c3aed" />,
   //   tagColor: "text-purple-600",
-  //   tag: "UGC + NSDC",
+  //   tag: "Adobe + Google",
   //   titleColor: "text-[#0A1628]",
   //   title: "Recognised Certifications",
   //   descColor: "text-gray-500",
-  //   desc: "Earn certifications that employers actually value — UGC-recognised degrees and NSDC-approved skill certificates.",
+  //   desc: "Earn certifications that employers actually value — Adobe Creative, Google Career, and Microsoft-recognised skill certificates.",
   // },
   {
     bg: "bg-[#F4F8FF] border border-[#dce9fa]",
@@ -80,7 +80,7 @@ export default function AboutMission() {
         <Reveal className="flex justify-between items-end gap-4 flex-wrap mb-10">
           <h2 className="text-[clamp(26px,4vw,44px)] font-black text-[#0A1628] leading-[1.15]">
             Why 20,000+ Students<br />
-            <span className="text-[#094E93]">Choose SkillEdge</span>
+            <span className="text-[#094E93]">Choose Edura</span>
           </h2>
           
         </Reveal>

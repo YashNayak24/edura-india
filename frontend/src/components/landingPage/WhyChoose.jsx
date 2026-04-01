@@ -212,7 +212,7 @@ export default function WhyChoose({ onEnquiryClick }) {
           <div {...card('F', { borderColor: '#E8EDF5', background: 'white' })}>
             <div className="p-5 lg:p-6">
               <div className="text-[10px] font-black uppercase tracking-widest mb-4" style={{ color: '#94a3b8' }}>Har course mein milega</div>
-              {[['Live + Recorded Classes', 'Flexible timing'], ['NSDC Certificate', 'Industry approved'], ['Real Projects', 'Portfolio ready'], ['WhatsApp Support', 'Direct mentor access']].map(([a, b], i) => (
+              {[['Live + Recorded Classes', 'Flexible timing'], ['Industry Certificate', 'Globally recognized'], ['Real Projects', 'Portfolio ready'], ['WhatsApp Support', 'Direct mentor access']].map(([a, b], i) => (
                 <div key={i} className="flex items-center justify-between py-2 border-b last:border-b-0" style={{ borderColor: '#F1F5F9' }}>
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: '#EBF1FF' }}>

@@ -275,7 +275,7 @@ function HeroSection({ course }) {
         {/* RIGHT — Card */}
         <div className={`flex flex-col gap-4 lg:sticky lg:top-20 ${visible ? "animate-fadeUp" : ""}`} style={{ animationDelay: "0.2s" }}>
           {/* Banner / Thumbnail */}
-          <div className="w-full h-52 rounded-2xl flex items-center justify-center relative overflow-hidden group"
+          <div className="w-full h-[350px] rounded-2xl flex items-center justify-center relative overflow-hidden group"
             style={{ background: "linear-gradient(135deg, #094E93 0%, #0d1b3e 100%)" }}>
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "18px 18px" }} />
             <div className="absolute inset-0 bg-gradient-to-t from-[#073E75]/50 to-transparent" />

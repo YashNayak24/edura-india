@@ -281,7 +281,7 @@ export default function FreeFeatures() {
 
         {/* ── Footer Note ── */}
         <p className="text-center mt-8 text-[13px] sm:text-[13.5px] text-[#5A6A8A] font-medium">
-          Trusted by <strong className="text-[#0D1E42]">20,000+ students</strong> — join thousands who've upskilled and succeeded with SkillEdge.
+          Trusted by <strong className="text-[#0D1E42]">20,000+ students</strong> — join thousands who've upskilled and succeeded with Edura.
         </p>
 
       </div>
