@@ -19,23 +19,24 @@ import Blogs from "./Blogs";
 
 export default function App() {
   const [showPopup, setShowPopup] = useState(false);
+
+  const openEnquiry = () => setShowPopup(true);
+
   return (
     <>
       <Router>
         <TopBar />
-        <AlertPopup />
+        <AlertPopup onEnquiryClick={openEnquiry} />
         <CoursePopup />
-        <Navbar onEnquiryClick={() => setShowPopup(true)} />
+        <Navbar onEnquiryClick={openEnquiry} />
         <Routes>
-          <Route path='/' element={<LandingPage onEnquiryClick={() => setShowPopup(true)} />}></Route>
+          <Route path='/' element={<LandingPage onEnquiryClick={openEnquiry} />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path="/courses" element={<Courses />} />
           <Route path="/courses/:slug" element={<CourseDetails />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="*" element={<NotFound onEnquiryClick={() => setShowPopup(true)} />} />
-
-
+          <Route path="*" element={<NotFound onEnquiryClick={openEnquiry} />} />
         </Routes>
         <EnquiryPopup
           open={showPopup}
