@@ -52,7 +52,7 @@ const steps = [
   },
 ];
 
-export default function PlacementSteps() {
+export default function PlacementSteps({onEnquiryClick}) {
   return (
     <section
       className="w-full py-16 sm:py-16 px-4"
@@ -150,6 +150,7 @@ export default function PlacementSteps() {
         {/* CTA */}
         <div className="flex justify-center mt-10">
           <button
+          onClick={onEnquiryClick}
             className="inline-flex items-center gap-3 text-white font-bold text-[15px] px-10 py-[15px] rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 active:scale-[0.98] select-none"
             style={{
               background: "#073E75",
