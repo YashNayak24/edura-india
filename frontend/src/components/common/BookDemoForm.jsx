@@ -164,7 +164,7 @@ export default function BookDemoForm() {
             <line x1="9" y1="7" x2="15" y2="7" /><line x1="9" y1="11" x2="13" y2="11" />
           </svg>
         </div>
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w0">
           <h2 className="text-[16px] sm:text-[18px] font-extrabold text-[#0D1E42] tracking-[-0.02em] leading-tight">Book Your Free Demo</h2>
           <p className="text-[11px] sm:text-[12px] text-[#5A6A8A] font-medium mt-[2px]">
             Fill in — our counsellor will call within <strong className="text-[#094E93]">24 hours.</strong>

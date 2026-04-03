@@ -101,9 +101,9 @@ const POPUPS = [
    BOOK DEMO MODAL
 ══════════════════════════════════════════════════════════════════ */
 function BookDemoModal({ onClose }) {
-  const handleBackdrop = (e) => {
-    if (e.target === e.currentTarget) onClose()
-  }
+  // const handleBackdrop = (e) => {
+  //   if (e.target === e.currentTarget) onClose()
+  // }
 
   useEffect(() => {
     const handleKey = (e) => { if (e.key === 'Escape') onClose() }
@@ -120,10 +120,10 @@ function BookDemoModal({ onClose }) {
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
       style={{ background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(4px)' }}
-      onClick={handleBackdrop}
+      // onClick={handleBackdrop}
     >
       <div
-        className="relative w-full max-w-[480px] max-h-[90vh] overflow-y-auto rounded-[20px]"
+        className="relative w-full max-w-[540px] max-h-[90vh] overflow-y-auto rounded-[20px]"
         style={{ animation: 'modalPop 0.35s cubic-bezier(0.34,1.35,0.64,1) both' }}
       >
         <button
