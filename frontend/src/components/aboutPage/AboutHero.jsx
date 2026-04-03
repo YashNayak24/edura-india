@@ -1,6 +1,7 @@
 import { IconTrophy, IconShield, IconStar, IconTarget } from "./icons";
+import { Link } from 'react-router-dom'
 
-export default function AboutHero() {
+export default function AboutHero({ onBookDemoClick }) {
   return (
     <section className="bg-white relative overflow-hidden pt-[110px]">
       {/* ── BG Dot Pattern ── */}
@@ -37,12 +38,16 @@ export default function AboutHero() {
             </p>
 
             <div className="fade-up-3 flex gap-3 flex-wrap">
-              <button className="btn-shine px-6 py-3.5 bg-[#094E93] text-white font-bold rounded-xl text-[15px] shadow-[0_8px_24px_rgba(9,78,147,.3)] hover:bg-[#073E75] transition-colors">
+              <button 
+              onClick={onBookDemoClick}
+              className="btn-shine px-6 py-3.5 bg-[#094E93] text-white font-bold rounded-xl text-[15px] shadow-[0_8px_24px_rgba(9,78,147,.3)] hover:bg-[#073E75] transition-colors">
                 Book Free Demo
               </button>
-              <button className="px-6 py-3.5 border-2 border-[#094E93]/30 text-[#094E93] font-bold rounded-xl text-[15px] hover:bg-[#EBF1FF] hover:border-[#094E93] hover:">
-                Explore Courses →
-              </button>
+              <Link to={"/courses"}>
+                <button className="px-6 py-3.5 border-2 border-[#094E93]/30 text-[#094E93] font-bold rounded-xl text-[15px] hover:bg-[#EBF1FF] hover:border-[#094E93] hover:">
+                  Explore Courses →
+                </button>
+              </Link>
             </div>
 
             {/* Trust badges */}

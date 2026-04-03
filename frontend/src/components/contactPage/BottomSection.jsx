@@ -1,5 +1,9 @@
 import { useState } from 'react'
 
+const PHONE_NUMBER = "919217489565"
+const WHATSAPP_NUMBER = "919217489565"
+const MAPS_LINK = "https://maps.google.com/?q=E-89,+Block+E,+Kalkaji,+New+Delhi,+Delhi+110019"
+
 const FAQS = [
   { q:"How do I book a Free Demo Class?",               a:"Simply fill the contact form on this page or call/WhatsApp us. Our counsellor will schedule a free demo at a time convenient for you — no commitment required." },
   { q:"Are classes available online and offline both?", a:"Yes — both online (via Zoom/Google Meet) and offline (at our Delhi NCR centres) classes are available. You can switch modes anytime based on your convenience." },
@@ -13,27 +17,55 @@ const WA_PATH = "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.
 export default function BottomSection() {
   const [open, setOpen] = useState(null)
 
+  const handleCall = () => {
+    window.location.href = `tel:+${PHONE_NUMBER}`
+  }
+
+  const handleWhatsApp = () => {
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}`, "_blank")
+  }
+
   return (
     <>
       {/* ── Map ── */}
       <div className="rounded-[20px] overflow-hidden border border-[#DDE5F8] shadow-[0_8px_28px_rgba(9,78,147,.07)] mb-12">
-        <div className="h-[220px] flex items-center justify-center relative overflow-hidden"
-          style={{ background:"linear-gradient(135deg,#E8F0FE,#D3E3FD)" }}>
-          <div className="absolute inset-0 pointer-events-none"
-            style={{ backgroundImage:"radial-gradient(rgba(9,78,147,.06) 1.5px,transparent 1.5px)", backgroundSize:"22px 22px" }}/>
-          <div className="text-center relative z-10">
-            <div className="w-5 h-5 rounded-full bg-[#094E93] mx-auto mb-1"
-              style={{ animation:"pinpulse 2s ease-in-out infinite" }}/>
-            <p className="text-[13px] font-bold text-[#094E93]">SkillEdge Institute — Kalkaji, New Delhi</p>
+        
+        {/* Map Image — clickable, opens Google Maps */}
+        <a
+          href={MAPS_LINK}
+          target="_blank"
+          rel="noreferrer"
+          className="block relative group"
+        >
+          <img
+            src="/images/map_image.png"
+            alt="Edura location map — E-89, Block E, Kalkaji, New Delhi"
+            className="w-full h-[220px] sm:h-[260px] md:h-[300px] object-cover object-center"
+          />
+          {/* Hover overlay */}
+          <div className="absolute inset-0 bg-[#094E93]/0 group-hover:bg-[#094E93]/10 transition-all duration-200 flex items-center justify-center">
+            <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-[#094E93] font-bold text-[13px] px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5}>
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              Open in Maps
+            </span>
           </div>
-        </div>
-        <div className="bg-white border-t border-[#DDE5F8] px-5 py-4 flex items-center justify-between gap-3 flex-wrap">
-          <div className="text-[13px] font-semibold text-[#0D1E42]">
-            G-33, 1st Floor, Main Road, Kalkaji <span className="text-[#5A6A8A] font-medium">· New Delhi – 110019</span>
+        </a>
+
+        {/* Footer bar */}
+        <div className="bg-white border-t border-[#DDE5F8] px-4 py-3 sm:px-5 sm:py-4 flex items-center justify-between gap-3 flex-wrap">
+          <div className="text-[12px] sm:text-[13px] font-semibold text-[#0D1E42]">
+            Edura Institute -{" "}
+            <span className="text-[#5A6A8A] font-medium">E-89, Block E, Kalkaji, New Delhi – 110019</span>
           </div>
-          <a href="https://maps.google.com" target="_blank" rel="noreferrer"
-            className="inline-flex items-center gap-[6px] bg-[#094E93] text-white rounded-[9px] px-4 py-[9px] text-[13px] font-bold transition-all duration-[180ms] hover:bg-[#0A5FAD] hover:-translate-y-px">
-            <svg viewBox="0 0 24 24" className="w-[14px] h-[14px]" fill="none" stroke="white" strokeWidth={2.5}>
+          <a
+            href={MAPS_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-[6px] bg-[#094E93] text-white rounded-[9px] px-3 py-[8px] sm:px-4 sm:py-[9px] text-[12px] sm:text-[13px] font-bold transition-all duration-[180ms] hover:bg-[#0A5FAD] hover:-translate-y-px whitespace-nowrap"
+          >
+            <svg viewBox="0 0 24 24" className="w-[13px] h-[13px] sm:w-[14px] sm:h-[14px]" fill="none" stroke="white" strokeWidth={2.5}>
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
             </svg>
             Open in Maps
@@ -48,7 +80,7 @@ export default function BottomSection() {
           <h2 className="text-[clamp(22px,3vw,36px)] font-extrabold text-[#0D1E42] tracking-[-0.03em]">
             Frequently Asked <span className="text-[#094E93]">Questions</span>
           </h2>
-          <p className="text-[14.5px] text-[#5A6A8A] font-medium mt-2">Everything you need to know before joining SkillEdge.</p>
+          <p className="text-[14.5px] text-[#5A6A8A] font-medium mt-2">Everything you need to know before joining Edura India.</p>
         </div>
 
         <div className="max-w-[760px] mx-auto flex flex-col gap-[10px]">
@@ -59,7 +91,7 @@ export default function BottomSection() {
                 style={{ border: isOpen ? "1.5px solid rgba(9,78,147,.25)" : "1.5px solid #DDE5F8", boxShadow: isOpen ? "0 6px 24px rgba(9,78,147,.08)" : "none" }}>
                 <button className="w-full flex items-center justify-between gap-[14px] px-[18px] py-4 text-left cursor-pointer bg-transparent border-none"
                   style={{ fontFamily:"inherit" }} onClick={() => setOpen(isOpen ? null : i)}>
-                  <span className="text-[14px] font-bold text-[#0D1E42] leading-[1.4]">{f.q}</span>
+                  <span className="text-[13px] sm:text-[14px] font-bold text-[#0D1E42] leading-[1.4]">{f.q}</span>
                   <span className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center border transition-all duration-[220ms]"
                     style={{ background: isOpen ? "#094E93" : "#F7F9FF", borderColor: isOpen ? "#094E93" : "#DDE5F8", transform: isOpen ? "rotate(45deg)" : "rotate(0deg)" }}>
                     <svg viewBox="0 0 24 24" className="w-[13px] h-[13px]" fill="none" stroke={isOpen ? "#fff" : "#5A6A8A"} strokeWidth={2.5}>
@@ -70,7 +102,7 @@ export default function BottomSection() {
                 {isOpen && (
                   <div className="px-[18px] pb-4">
                     <div className="h-px bg-[#DDE5F8] mb-[13px]"/>
-                    <p className="text-[13.5px] text-[#5A6A8A] font-medium leading-[1.72]">{f.a}</p>
+                    <p className="text-[13px] sm:text-[13.5px] text-[#5A6A8A] font-medium leading-[1.72]">{f.a}</p>
                   </div>
                 )}
               </div>
@@ -86,25 +118,35 @@ export default function BottomSection() {
           style={{ backgroundImage:"radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px)", backgroundSize:"24px 24px" }}/>
         <div className="absolute top-[-40px] right-[-40px] w-[200px] h-[200px] rounded-full pointer-events-none"
           style={{ background:"radial-gradient(circle,rgba(245,166,35,.12),transparent 70%)" }}/>
-        <div className="relative z-10 flex items-center justify-between gap-5 px-7 sm:px-8 py-7 flex-wrap">
+
+        <div className="relative z-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 px-5 py-6 sm:px-7 sm:py-7 md:px-8">
           <div>
-            <div className="text-[10.5px] font-bold text-white/45 uppercase tracking-[.09em] mb-[5px]">Still Have Questions?</div>
-            <div className="font-black text-white tracking-[-0.025em] leading-[1.15]" style={{ fontSize:"clamp(17px,2.5vw,24px)" }}>
+            <div className="text-[10px] sm:text-[10.5px] font-bold text-white/45 uppercase tracking-[.09em] mb-[5px]">Still Have Questions?</div>
+            <div className="font-black text-white tracking-[-0.025em] leading-[1.15] text-[17px] sm:text-[20px] md:text-[clamp(17px,2.5vw,24px)]">
               Talk to our counsellor — <span className="text-[#F5A623]">it's free.</span>
             </div>
-            <div className="text-[13px] text-white/50 font-medium mt-1">Call · WhatsApp · Email — reach us any way you prefer.</div>
+            <div className="text-[12px] sm:text-[13px] text-white/50 font-medium mt-1">Call · WhatsApp · Email — reach us any way you prefer.</div>
           </div>
-          <div className="flex gap-[10px] flex-wrap flex-shrink-0">
-            <a href="tel:+919999912345"
-              className="inline-flex items-center gap-[7px] bg-white text-[#094E93] rounded-[10px] px-5 py-[11px] text-[13.5px] font-bold transition-all duration-[180ms] hover:bg-[#EAF2FB]">
-              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07"/></svg>
+
+          {/* Buttons — full width on mobile, auto on sm+ */}
+          <div className="flex flex-col xs:flex-row sm:flex-row gap-[10px] flex-shrink-0">
+            <button
+              onClick={handleCall}
+              className="inline-flex items-center justify-center gap-[7px] bg-white text-[#094E93] rounded-[10px] px-5 py-[11px] text-[13px] sm:text-[13.5px] font-bold transition-all duration-[180ms] hover:bg-[#EAF2FB] active:scale-[0.97] cursor-pointer border-none w-full xs:w-auto"
+            >
+              <svg viewBox="0 0 24 24" className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2}>
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
               Call Now
-            </a>
-            <a href="https://wa.me/919999912345" target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-[7px] bg-[#25D366] text-white rounded-[10px] px-5 py-[11px] text-[13.5px] font-bold transition-all duration-[180ms] hover:bg-[#1ebe59]">
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-white"><path d={WA_PATH}/></svg>
+            </button>
+
+            <button
+              onClick={handleWhatsApp}
+              className="inline-flex items-center justify-center gap-[7px] bg-[#25D366] text-white rounded-[10px] px-5 py-[11px] text-[13px] sm:text-[13.5px] font-bold transition-all duration-[180ms] hover:bg-[#1ebe59] active:scale-[0.97] cursor-pointer border-none w-full xs:w-auto"
+            >
+              <svg viewBox="0 0 24 24" className="w-4 h-4 flex-shrink-0 fill-white"><path d={WA_PATH}/></svg>
               WhatsApp
-            </a>
+            </button>
           </div>
         </div>
       </div>

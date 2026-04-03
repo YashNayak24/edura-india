@@ -67,7 +67,7 @@ export default function AboutValues() {
       </section>
 
       {/* ════ TEAM ════ */}
-      <section className="bg-[#F4F6FB] py-[72px]">
+      {/* <section className="bg-[#F4F6FB] py-[72px]">
         <div className="max-w-[1280px] mx-auto px-6">
           <Reveal className="text-center mb-10">
             <span className="text-[11px] font-bold uppercase tracking-widest text-[#094E93] bg-[#E8F0FC] px-4 py-1.5 rounded-full">
@@ -105,7 +105,7 @@ export default function AboutValues() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ════ CERTIFICATIONS ════ */}
       <section className="bg-[#F4F6FB] py-14 px-6 text-center">

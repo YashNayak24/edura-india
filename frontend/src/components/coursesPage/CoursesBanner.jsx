@@ -17,7 +17,7 @@ export default function CoursesBanner() {
       <div className="max-w-[1400px] mx-auto relative">
         
         <div className="text-[clamp(22px,3vw,34px)] font-black text-white tracking-[-0.04em] mb-[6px]">
-          All Courses — 125+ Programs
+          All Courses
         </div>
         <div className="text-[14px] text-white/75 font-medium mb-5">
           Design · Coding · Marketing · AI · Degree Programs · Short Term Certifications

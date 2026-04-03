@@ -2,7 +2,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useState } from "react";
 
 // ─── Phone Number ─────────────────────────────────────────────────────────────
-const PHONE_NUMBER = "+919958700178"; // ← apna number yahan daalo
+const PHONE_NUMBER = "+919217489565"; // ← apna number yahan daalo
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
 const Icons = {

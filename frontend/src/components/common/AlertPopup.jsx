@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import BookDemoForm from './BookDemoForm'
 
 /* ══════════════════════════════════════════════════════════════════
    CONSTANTS
@@ -55,14 +54,9 @@ const CloseIcon = () => (
     <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
   </svg>
 )
-const ModalCloseIcon = () => (
-  <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5}>
-    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-  </svg>
-)
 
 /* ══════════════════════════════════════════════════════════════════
-   POPUP DATA — sirf 2 buttons: Book Demo + Enquiry Now
+   POPUP DATA
 ══════════════════════════════════════════════════════════════════ */
 const POPUPS = [
   {
@@ -98,71 +92,22 @@ const POPUPS = [
 ]
 
 /* ══════════════════════════════════════════════════════════════════
-   BOOK DEMO MODAL
-══════════════════════════════════════════════════════════════════ */
-function BookDemoModal({ onClose }) {
-  // const handleBackdrop = (e) => {
-  //   if (e.target === e.currentTarget) onClose()
-  // }
-
-  useEffect(() => {
-    const handleKey = (e) => { if (e.key === 'Escape') onClose() }
-    document.addEventListener('keydown', handleKey)
-    return () => document.removeEventListener('keydown', handleKey)
-  }, [onClose])
-
-  useEffect(() => {
-    document.body.style.overflow = 'hidden'
-    return () => { document.body.style.overflow = '' }
-  }, [])
-
-  return (
-    <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-      style={{ background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(4px)' }}
-      // onClick={handleBackdrop}
-    >
-      <div
-        className="relative w-full max-w-[540px] max-h-[90vh] overflow-y-auto rounded-[20px]"
-        style={{ animation: 'modalPop 0.35s cubic-bezier(0.34,1.35,0.64,1) both' }}
-      >
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/90 border border-[#DDE5F8] text-[#5A6A8A] hover:text-[#0D1E42] hover:bg-white transition-all cursor-pointer"
-          style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.12)' }}
-        >
-          <ModalCloseIcon />
-        </button>
-        <BookDemoForm />
-      </div>
-      <style>{`
-        @keyframes modalPop {
-          from { opacity: 0; transform: scale(0.88) translateY(20px); }
-          to   { opacity: 1; transform: scale(1)    translateY(0);    }
-        }
-      `}</style>
-    </div>
-  )
-}
-
-/* ══════════════════════════════════════════════════════════════════
    MAIN POPUP COMPONENT
 ══════════════════════════════════════════════════════════════════ */
-export default function AlertPopup({ onEnquiryClick }) {
-  const [visible,       setVisible]       = useState(false)
-  const [sliding,       setSliding]       = useState(false)
-  const [popupIdx,      setPopupIdx]      = useState(0)
-  const [barWidth,      setBarWidth]      = useState(100)
-  const [topPos,        setTopPos]        = useState(18)
-  const [showBookModal, setShowBookModal] = useState(false)
+export default function AlertPopup({ onEnquiryClick, onBookDemoClick }) {
+  const [visible,  setVisible]  = useState(false)
+  const [sliding,  setSliding]  = useState(false)
+  const [popupIdx, setPopupIdx] = useState(0)
+  const [barWidth, setBarWidth] = useState(100)
+  const [topPos,   setTopPos]   = useState(18)
 
-  const hideTimerRef  = useRef(null)
-  const waitTimerRef  = useRef(null)
-  const barAnimRef    = useRef(null)
-  const pausedRef     = useRef(false)
-  const elapsedRef    = useRef(0)
-  const startTimeRef  = useRef(null)
-  const remainRef     = useRef(SHOW_DURATION)
+  const hideTimerRef = useRef(null)
+  const waitTimerRef = useRef(null)
+  const barAnimRef   = useRef(null)
+  const pausedRef    = useRef(false)
+  const elapsedRef   = useRef(0)
+  const startTimeRef = useRef(null)
+  const remainRef    = useRef(SHOW_DURATION)
 
   const startBar = useCallback((remaining) => {
     clearTimeout(barAnimRef.current)
@@ -281,11 +226,11 @@ export default function AlertPopup({ onEnquiryClick }) {
                 {popup.desc}
               </div>
 
-              {/* ── 2 Buttons only ── */}
+              {/* Buttons */}
               <div className="flex gap-[6px] items-center" style={{ flexWrap: 'nowrap' }}>
                 {/* Book Demo */}
                 <button
-                  onClick={() => { slideOut(true); setShowBookModal(true) }}
+                  onClick={() => { slideOut(true); onBookDemoClick?.() }}
                   className="flex items-center gap-1.5 px-[11px] py-1 rounded-[6px] text-[11px] font-extrabold cursor-pointer border-none transition-all duration-150 hover:opacity-90 whitespace-nowrap"
                   style={{ background: 'rgba(0,0,0,0.18)', color: popup.theme.textCol, fontFamily: 'inherit' }}
                 >
@@ -332,11 +277,6 @@ export default function AlertPopup({ onEnquiryClick }) {
             </button>
           </div>
         </div>
-      )}
-
-      {/* Book Demo Modal */}
-      {showBookModal && (
-        <BookDemoModal onClose={() => setShowBookModal(false)} />
       )}
     </>
   )

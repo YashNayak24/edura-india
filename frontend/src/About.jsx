@@ -254,7 +254,7 @@
 //           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 //             {/* Left */}
 //             <div>
-              
+
 //               <h1 className="fade-up-2 text-[clamp(36px,5vw,60px)] font-black leading-[1.08] mb-6 text-[#0A1628]">
 //                 Empowering Careers<br />
 //                 <span className="gradient-text">One Skill at a Time.</span>
@@ -653,21 +653,21 @@
 // }
 
 import { GlobalStyles } from "./components/aboutPage/utils";
-import AboutHero    from "./components/aboutPage/AboutHero";
-import AboutStats   from "./components/aboutPage/AboutStats";
+import AboutHero from "./components/aboutPage/AboutHero";
+import AboutStats from "./components/aboutPage/AboutStats";
 import AboutJourney from "./components/aboutPage/AboutJourney";
 import AboutMission from "./components/aboutPage/AboutMission";
-import AboutValues  from "./components/aboutPage/AboutValues";
-import AboutCTA     from "./components/aboutPage/AboutCTA";
+import AboutValues from "./components/aboutPage/AboutValues";
+import AboutCTA from "./components/aboutPage/AboutCTA";
 
- 
-export default function About() {
+
+export default function About({ onBookDemoClick }) {
   return (
     <div className="font-[Plus_Jakarta_Sans,sans-serif] bg-[#F4F6FB] antialiased overflow-x-hidden">
       {/* Inject all global keyframes + utility classes once */}
       <GlobalStyles />
- 
-      <AboutHero />
+
+      <AboutHero onBookDemoClick={onBookDemoClick} />
       <AboutStats />
       <AboutJourney />
       <AboutMission />
