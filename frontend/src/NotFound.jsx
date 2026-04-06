@@ -47,7 +47,7 @@ const POPULAR_LINKS = [
 
 // ── Main Component ────────────────────────────────────────────────────────────
 
-export default function NotFound({ onEnquiryClick }) {
+export default function NotFound({ onEnquiryClick, onBookDemoClick }) {
   const [dots, setDots] = useState(0);
 
   useEffect(() => {
@@ -55,10 +55,6 @@ export default function NotFound({ onEnquiryClick }) {
     return () => clearInterval(id);
   }, []);
 
-  const handleBookDemo = () => {
-    sessionStorage.setItem("scrollTo", "book-demo");
-    window.location.href = "/";
-  };
 
   const handleLinkClick = (e, link) => {
     if (link.action === "enquiry") {
@@ -162,7 +158,7 @@ export default function NotFound({ onEnquiryClick }) {
                 <p className="text-gray-500 text-xs mt-0.5">Book a free demo class — no commitment needed.</p>
               </div>
               <button
-                onClick={handleBookDemo}
+                onClick={onBookDemoClick}
                 className="shrink-0 bg-[#F5A623] text-white text-xs font-bold px-5 py-2.5 rounded-lg hover:bg-[#e09610] transition-colors"
               >
                 Book Free Demo →

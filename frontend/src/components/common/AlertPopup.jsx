@@ -80,7 +80,7 @@ const POPUPS = [
   {
     theme:   { card: '#4a90d9', icon: '#3578c4', textCol: '#fff', subCol: 'rgba(255,255,255,0.88)' },
     svgIcon: <BriefcaseIcon col="white"/>,
-    title:   'Job Guarantee Ya Paise Wapas!',
+    title:   "Career support until you're hired!",
     desc:    '94% placement rate. Resume + referrals free.',
   },
   {

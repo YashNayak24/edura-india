@@ -307,8 +307,8 @@ export default function HeroSection() {
           </button>
 
           <Link to={"/courses"}>
-            <button className="inline-flex items-center gap-2 bg-white text-[#0D1E42]
-            border-[1.5px] border-[#DDE5F8] rounded-[12px]
+            <button className="inline-flex items-center gap-2 bg-white text-[#094E93]
+            border-[2px] border-[#DDE5F9] rounded-[12px]
             px-6 py-[13px] text-[14px] font-bold cursor-pointer
             transition-all duration-200 hover:-translate-y-0.5
             hover:border-[#094E93] hover:text-[#094E93] hover:bg-[#EAF2FB]"
