@@ -38,9 +38,9 @@ export default function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About onBookDemoClick={openBookDemo} />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/courses/:slug" element={<CourseDetails />} />
+          <Route path="/courses/:slug" element={<CourseDetails onEnquiryClick={openEnquiry} onBookDemoClick={openBookDemo} />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="*" element={<NotFound onEnquiryClick={openEnquiry} onBookDemoClick={openBookDemo} />} />
+          <Route path="*" element={<NotFound onBookDemoClick={openBookDemo} />} />
         </Routes>
         <EnquiryPopup
           open={showEnquiry}

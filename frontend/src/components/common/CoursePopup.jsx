@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 const courses = [
-  { id: 1, image: "/images/coding.png", route: "/courseDetails?course=full-stack-development", title: "Coding" },
-  { id: 2, image: "/images/data_analyst.png", route: "/courseDetails?course=data-analyst", title: "Data Analyst" },
-  { id: 3, image: "/images/digital_marketing.png", route: "/courseDetails?course=digital-marketing", title: "Digital Marketing" },
-  { id: 4, image: "/images/graphic_design.png", route: "/courseDetails?course=graphic-design", title: "Graphic Design" },
+  { id: 1, image: "/homePopupImages/coding.png", route: "/courseDetails?course=full-stack-development", title: "Coding" },
+  { id: 2, image: "/homePopupImages/data_analyst.png", route: "/courseDetails?course=data-analyst", title: "Data Analyst" },
+  { id: 3, image: "/homePopupImages/digital_marketing.png", route: "/courseDetails?course=digital-marketing", title: "Digital Marketing" },
+  { id: 4, image: "/homePopupImages/graphic_design.png", route: "/courseDetails?course=graphic-design", title: "Graphic Design" },
 ];
 
 export default function CoursePopup() {

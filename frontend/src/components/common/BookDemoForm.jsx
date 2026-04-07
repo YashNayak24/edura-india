@@ -43,7 +43,7 @@ const COURSES = [
 /* ────────────────────────────────────────────────────────────────────────────
    BookDemoForm — exported default
 ───────────────────────────────────────────────────────────────────────────── */
-export default function BookDemoForm() {
+export default function BookDemoForm({formHead}) {
   const [step,      setStep]      = useState("form");
   const [form,      setForm]      = useState({ name: "", email: "", phone: "", course: "", message: "" });
   const [errors,    setErrors]    = useState({});
@@ -165,7 +165,7 @@ export default function BookDemoForm() {
           </svg>
         </div>
         <div className="flex-1 min-w0">
-          <h2 className="text-[16px] sm:text-[18px] font-extrabold text-[#0D1E42] tracking-[-0.02em] leading-tight">Book Your Free Demo</h2>
+          <h2 className="text-[16px] sm:text-[18px] font-extrabold text-[#0D1E42] tracking-[-0.02em] leading-tight">{formHead || "Book Your Free Demo"}</h2>
           <p className="text-[11px] sm:text-[12px] text-[#5A6A8A] font-medium mt-[2px]">
             Fill in — our counsellor will call within <strong className="text-[#094E93]">24 hours.</strong>
           </p>
@@ -256,7 +256,7 @@ export default function BookDemoForm() {
           {loading ? (
             <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />Sending OTP…</>
           ) : (
-            <><svg viewBox="0 0 24 24" className="w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]" fill="none" stroke="white" strokeWidth={2.5}><line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>Book Free Demo Class</>
+            <><svg viewBox="0 0 24 24" className="w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]" fill="none" stroke="white" strokeWidth={2.5}><line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>{formHead || "Book Your Free Demo"}</>
           )}
         </button>
       </form>
