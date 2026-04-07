@@ -88,13 +88,13 @@ const courseSchema = new mongoose.Schema(
     keyTakeaways: [{ type: String }],
 
     // ─── 13. Syllabus ──────────────────────────────────────────────
-    syllabus: [
-      {
-        moduleTitle: { type: String },
-        topics:      [{ type: String }],
-        _id:         false,
-      },
-    ],
+    // syllabus: [
+    //   {
+    //     moduleTitle: { type: String },
+    //     topics:      [{ type: String }],
+    //     _id:         false,
+    //   },
+    // ],
 
     // ─── 14. Career opportunities ──────────────────────────────────
     careerOpportunities: [
@@ -117,25 +117,25 @@ const courseSchema = new mongoose.Schema(
     ],
 
     // ─── 16. Instructor ────────────────────────────────────────────
-    instructor: {
-      name:        { type: String },
-      designation: { type: String },
-      experience:  { type: String },
-      bio:         { type: String },
-      image:       { type: imageSchema },
-    },
+    // instructor: {
+    //   name:        { type: String },
+    //   designation: { type: String },
+    //   experience:  { type: String },
+    //   bio:         { type: String },
+    //   image:       { type: imageSchema },
+    // },
 
     // ─── 17. Student reviews ───────────────────────────────────────
-    reviews: [
-      {
-        name:    { type: String },
-        rating:  { type: Number, min: 1, max: 5 },
-        comment: { type: String },
-        date:    { type: Date },
-        image:   { type: imageSchema },
-        _id:     false,
-      },
-    ],
+    // reviews: [
+    //   {
+    //     name:    { type: String },
+    //     rating:  { type: Number, min: 1, max: 5 },
+    //     comment: { type: String },
+    //     date:    { type: Date },
+    //     image:   { type: imageSchema },
+    //     _id:     false,
+    //   },
+    // ],
 
     // ─── 18. FAQs ──────────────────────────────────────────────────
     faqs: [faqSchema],
