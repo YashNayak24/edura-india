@@ -39,4 +39,9 @@ const enquirySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// Schema close होने के बाद, module.exports से पहले
+enquirySchema.index({ status: 1, createdAt: -1 });
+enquirySchema.index({ formType: 1, status: 1 });
+enquirySchema.index({ otpExpiry: 1 }, { expireAfterSeconds: 0 }); // Auto-delete expired OTPs
+
 module.exports = mongoose.model("Enquiry", enquirySchema);

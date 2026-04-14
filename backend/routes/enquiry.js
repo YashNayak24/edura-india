@@ -219,8 +219,9 @@ router.get("/all", async (req, res) => {
       .sort({ createdAt: -1 })
       .skip((page - 1) * limit)
       .limit(parseInt(limit))
-      .select("-otp");
-
+      .select("-otp")
+      .lean(); 
+      
     const total = await Enquiry.countDocuments(filter);
     res.json({ success: true, total, page: parseInt(page), data: enquiries });
   } catch (err) {

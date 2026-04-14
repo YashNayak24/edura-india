@@ -1,6 +1,6 @@
-const express  = require("express");
-const router   = express.Router();
-const Course   = require("../models/Course.js");
+const express = require("express");
+const router = express.Router();
+const Course = require("../models/Course.js");
 
 // ─────────────────────────────────────────────────────────────────
 //  GET /api/courses  — list all active courses (for courses listing page)
@@ -11,26 +11,33 @@ router.get("/", async (req, res) => {
     const filter = { isActive: true };
 
     if (category && category !== "all") filter.category = category;
-    if (featured === "true")            filter.isFeatured = true;
+    if (featured === "true") filter.isFeatured = true;
 
     // Search — title, description, skillsCovered mein dhundo
     if (search) {
       const q = new RegExp(search, "i");
       filter.$or = [
-        { title:          q },
-        { description:    q },
-        { skillsCovered:  q },
-        { category:       q },
+        { title: q },
+        { description: q },
+        { skillsCovered: q },
+        { category: q },
       ];
     }
 
+    // const courses = await Course.find(filter)
+    //   .select(
+    //     "title slug description category level mode duration months " +
+    //     "price thumbnail badge isFeatured rating studentsEnrolled " +
+    //     "skillsCovered keyTakeaways placementRate averageSalary"
+    //   )
+    //   .sort({ isFeatured: -1, sortOrder: 1 });
+
     const courses = await Course.find(filter)
-      .select(
-        "title slug description category level mode duration months " +
+      .select("title slug description category level mode duration " +
         "price thumbnail badge isFeatured rating studentsEnrolled " +
-        "skillsCovered keyTakeaways placementRate averageSalary"
-      )
-      .sort({ isFeatured: -1, sortOrder: 1 });
+        "skillsCovered keyTakeaways placementRate averageSalary")
+      .sort({ isFeatured: -1, sortOrder: 1 })
+      .lean();
 
     res.json({ success: true, count: courses.length, data: courses });
   } catch (err) {
@@ -45,9 +52,9 @@ router.get("/", async (req, res) => {
 router.get("/:slug", async (req, res) => {
   try {
     const course = await Course.findOne({
-      slug:     req.params.slug,
+      slug: req.params.slug,
       isActive: true,
-    });
+    }).lean();
 
     if (!course) return res.status(404).json({ success: false, message: "Course not found" });
 
@@ -75,7 +82,7 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   try {
     const course = await Course.findByIdAndUpdate(req.params.id, req.body, {
-      new:          true,
+      new: true,
       runValidators: true,
     });
     if (!course) return res.status(404).json({ success: false, message: "Course not found" });

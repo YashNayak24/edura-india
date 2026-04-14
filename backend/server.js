@@ -30,10 +30,29 @@ app.use("/",             seoRoutes);      // sitemap.xml & robots.txt
 app.get("/api/health", (_, res) => res.json({ status: "ok" }));
 
 // ─── MongoDB + start ──────────────────────────────────────────────────────
+// mongoose
+//   .connect(process.env.MONGO_URI)
+//   .then(() => {
+//     console.log("MongoDB connected");
+//     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+//   })
+//   .catch((err) => console.error("DB connection error:", err));
+
+
+
 mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
+  .connect(process.env.MONGO_URI, {
+    maxPoolSize: 10,
+    serverSelectionTimeoutMS: 5000,
+    socketTimeoutMS: 45000,
+  })
+  .then(async () => {
     console.log("MongoDB connected");
+
+    // ✅ DB को warm रखो — dummy ping
+    await mongoose.connection.db.admin().ping();
+    console.log("DB warmed up ✅");
+
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   })
   .catch((err) => console.error("DB connection error:", err));
