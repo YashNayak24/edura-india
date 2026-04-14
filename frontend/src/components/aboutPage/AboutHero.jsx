@@ -32,15 +32,18 @@ export default function AboutHero({ onBookDemoClick }) {
             </h1>
 
             <p className="fade-up-3 text-gray-500 text-[clamp(15px,1.5vw,17px)] leading-[1.8] mb-8 max-w-[480px]">
-              Founded in Delhi NCR, SkillEdge is an industry-leading skill training
+              {/* Founded in Delhi NCR, SkillEdge is an industry-leading skill training
               institute dedicated to bridging the gap between education and employment. We
-              don't just teach — we place, mentor, and support until you land your dream job.
+              don't just teach — we place, mentor, and support until you land your dream job. */}
+              At EduraIndia, we believe that the right skills can completely transform your future. Our goal is simple — to help you move from learning to earning with confidence. We don’t just teach concepts, we focus on practical knowledge that prepares you for real-world challenges.
+              With expert guidance, hands-on training, and industry-relevant courses, we support you at every step of your journey. Whether you are starting fresh or upgrading your skills, EduraIndia helps you build a career that actually grows.
+
             </p>
 
             <div className="fade-up-3 flex gap-3 flex-wrap">
-              <button 
-              onClick={onBookDemoClick}
-              className="btn-shine px-6 py-3.5 bg-[#094E93] text-white font-bold rounded-xl text-[15px] shadow-[0_8px_24px_rgba(9,78,147,.3)] hover:bg-[#073E75] transition-colors">
+              <button
+                onClick={onBookDemoClick}
+                className="btn-shine px-6 py-3.5 bg-[#094E93] text-white font-bold rounded-xl text-[15px] shadow-[0_8px_24px_rgba(9,78,147,.3)] hover:bg-[#073E75] transition-colors">
                 Book Free Demo
               </button>
               <Link to={"/courses"}>

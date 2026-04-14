@@ -9,6 +9,7 @@ import AlumniReviews from './components/landingPage/AlumniReviews'
 import PlacementNews from './components/landingPage/PlacementNews'
 // import Affiliations from './components/landingPage/Affiliations'
 import ListedCompany from './components/landingPage/ListedCompany'
+import LandingAbout from './components/landingPage/LandingAbout'
 
 
 export default function LandingPage({ onEnquiryClick }) {
@@ -17,6 +18,7 @@ export default function LandingPage({ onEnquiryClick }) {
       {/* <Carousel /> */}
       <HeroSection />
       <PlacementNews />
+      <LandingAbout/>
       <WhyChoose onEnquiryClick={onEnquiryClick} />
       <Guidance />
       <ListedCompany />

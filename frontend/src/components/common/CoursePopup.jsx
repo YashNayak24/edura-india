@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 const courses = [
-  { id: 1, image: "/homePopupImages/coding.png", route: "/courseDetails?course=full-stack-development", title: "Coding" },
-  { id: 2, image: "/homePopupImages/data_analyst.png", route: "/courseDetails?course=data-analyst", title: "Data Analyst" },
-  { id: 3, image: "/homePopupImages/digital_marketing.png", route: "/courseDetails?course=digital-marketing", title: "Digital Marketing" },
-  { id: 4, image: "/homePopupImages/graphic_design.png", route: "/courseDetails?course=graphic-design", title: "Graphic Design" },
+  { id: 1, image: "https://res.cloudinary.com/de846sdih/image/upload/v1776177616/coding_b99b9m.png", route: "/courses/mern-stack-course-delhi", title: "Coding" },
+  { id: 2, image: "https://res.cloudinary.com/de846sdih/image/upload/v1776177607/data_analyst_zhrd9v.png", route: "/courses/data-analyst-course-delhi", title: "Data Analyst" },
+  { id: 3, image: "https://res.cloudinary.com/de846sdih/image/upload/v1776177619/digital_marketing_h6mjpq.png", route: "/courses/digital-marketing-course-delhi", title: "Digital Marketing" },
+  { id: 4, image: "https://res.cloudinary.com/de846sdih/image/upload/v1776177620/graphic_design_bkd7kf.png", route: "/courses/web-designing-course-delhi", title: "Graphic Design" },
 ];
 
 export default function CoursePopup() {
@@ -60,10 +60,16 @@ export default function CoursePopup() {
           <div className="rounded-2xl overflow-hidden shadow-2xl cursor-pointer group" onClick={handleImageClick} title={`Go to ${current.title} course`}>
             <div className="relative w-full aspect-square bg-white">
               {courses.map((course, idx) => (
-                <img key={course.id} src={course.image} alt={`Edura ${course.title} course`}
+                <img
+                  key={course.id}
+                  src={course.image}
+                  alt={`Edura ${course.title} course`}
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{ opacity: idx === currentIndex ? (fadeIn ? 1 : 0) : 0, transition: "opacity 0.3s ease-in-out" }}
                   draggable={false}
+                  referrerPolicy="no-referrer"        // ← external URLs ke liye zaruri
+                  crossOrigin="anonymous"             // ← CORS issues avoid karne ke liye
+                  onError={(e) => { e.target.style.opacity = 0; }}  // ← broken image hide ho jaye
                 />
               ))}
               <div className="absolute inset-0 flex items-end justify-center pb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -71,17 +77,6 @@ export default function CoursePopup() {
               </div>
             </div>
           </div>
-
-          {/* Dots */}
-          {/* <div className="flex items-center justify-center gap-2 mt-3">
-            {courses.map((_, idx) => (
-              <button key={idx} onClick={() => handleDotClick(idx)} aria-label={`Show ${courses[idx].title}`}
-                className="transition-all duration-300 rounded-full border-none outline-none cursor-pointer"
-                style={{ width: idx === currentIndex ? "24px" : "8px", height: "8px", background: idx === currentIndex ? "#F5A623" : "rgba(255,255,255,0.5)", padding: 0 }}
-              />
-            ))}
-          </div>
-          <p className="text-center text-white/80 text-xs mt-1.5 font-medium tracking-wide">{current.title}</p> */}
         </div>
       </div>
       <style>{`@keyframes popupEnter { from { opacity:0; transform:scale(0.85) translateY(20px); } to { opacity:1; transform:scale(1) translateY(0); } }`}</style>

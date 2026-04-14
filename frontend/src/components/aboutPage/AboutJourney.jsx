@@ -2,10 +2,10 @@ import { Reveal } from "./utils";
 import { IconTarget, IconGlobe } from "./icons";
 
 const TIMELINE = [
-  { year: "2018", title: "Founded in Delhi NCR",      desc: "Started with 3 courses and a vision to make quality skill training accessible to all." },
-  { year: "2020", title: "Industry Partnerships",      desc: "Partnered with Adobe, Microsoft & Google to launch globally certified training programs." },
-  { year: "2022", title: "125+ Courses Launched",      desc: "Expanded to 125+ courses across 8 career verticals with AI-integrated curriculum." },
-  { year: "2024", title: "20,000+ Students Placed",    desc: "Crossed the milestone with an industry-leading 94% placement success rate." },
+  { year: "2018", title: "Founded in Delhi NCR", desc: "Started with 3 courses and a vision to make quality skill training accessible to all." },
+  { year: "2020", title: "Industry Partnerships", desc: "Partnered with Adobe, Microsoft & Google to launch globally certified training programs." },
+  { year: "2022", title: "125+ Courses Launched", desc: "Expanded to 125+ courses across 8 career verticals with AI-integrated curriculum." },
+  { year: "2024", title: "20,000+ Students Placed", desc: "Crossed the milestone with an industry-leading 94% placement success rate." },
 ];
 
 export default function AboutJourney() {
@@ -54,9 +54,7 @@ export default function AboutJourney() {
               </div>
               <h3 className="text-[22px] font-black mb-3">Our Mission</h3>
               <p className="text-white/80 leading-relaxed text-[14px]">
-                To empower every student with industry-ready skills, real-world projects, and
-                personalized mentorship — so that no talented person remains unemployed due to
-                lack of guidance.
+                To empower every student with industry-ready skills, real-world projects, and personalized mentorship that builds true confidence. EduraIndia delivers practical learning experiences through its career training program which provides students with essential guidance and hands-on training needs to achieve their maximum potential — so that no capable individual is left behind due to lack of direction or opportunity.
               </p>
             </div>
 
@@ -67,8 +65,7 @@ export default function AboutJourney() {
               </div>
               <h3 className="text-[22px] font-black mb-3">Our Vision</h3>
               <p className="text-white/85 leading-relaxed text-[14px]">
-                To become India's most trusted skill training platform, where every learner
-                graduates with confidence, a certificate, and a confirmed job offer.
+                The organization strives to establish itself as India's most reliable skill development platform through its training programs which produce job-ready professionals who have exceptional skills for real-world application. The organization wants to establish a learning environment which enables students to acquire knowledge while developing their self-assurance and obtaining a recognized certificate which will help them achieve actual job opportunities that lead to lasting professional advancement.
               </p>
             </div>
           </Reveal>

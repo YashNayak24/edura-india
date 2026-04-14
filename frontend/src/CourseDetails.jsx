@@ -1301,33 +1301,46 @@ function HeroSection({ course }) {
             </div>
           </div>
 
-          <div className=" rounded-2xl p-5 text-white"
-           style={{ background: "linear-gradient(135deg, #094E93 0%, #0d1b3e 100%)" }}>
+          <div className="rounded-2xl p-5 text-white"
+     style={{ background: "linear-gradient(135deg, #094E93 0%, #0d1b3e 100%)" }}>
 
-            {/* Quote Icon */}
-            <div className="mb-3">
-              <svg className="w-8 h-8 text-amber-400 opacity-80" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-            </div>
+  {/* Quote Icon */}
+  <div>
+    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#f59e0b" style={{ opacity: 0.85 }}>
+      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+    </svg>
+  </div>
 
-            {/* Para */}
-            <p className="text-sm dm-sans text-slate-300 leading-relaxed mb-5 italic">
-              EduraIndia is Delhi's most trusted digital marketing institute — built to turn beginners into industry-ready professionals with live projects, expert mentors & 100% placement support.
-            </p>
+  {/* Category label */}
+  <p className="text-xs italic mt-1.5 mb-0.5" style={{ color: "rgba(255,255,255,0.6)" }}>
+    Career Guidance
+  </p>
 
-            {/* Buttons */}
-            <div className="flex gap-2.5">
-              <button className="flex-1 text-white py-2.5 rounded-lg font-bold text-sm sora transition-all duration-200"
-                style={{ background: "linear-gradient(135deg, #094E93, #0A5FAD)" }}>
-                Enroll Now
-              </button>
-              <button className="flex-1 border border-white/30 hover:bg-white/10 text-white py-2.5 rounded-lg font-semibold text-sm transition-colors sora">
-                Free Demo
-              </button>
-            </div>
+  {/* Heading */}
+  <h2 className="text-2xl font-black leading-tight mb-1">
+    Talk to an expert — chart your career path today
+  </h2>
 
-          </div>
+  {/* Subtext */}
+  <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.6)" }}>
+    Free 30-min session with certified counsellors
+  </p>
+
+  {/* Buttons */}
+  <div className="flex gap-2.5">
+    <button
+      className="flex-1 text-white py-2.5 rounded-lg font-bold text-sm transition-all duration-200"
+      style={{ background: "linear-gradient(135deg, #094E93, #0A5FAD)" }}>
+      Enquiry Now!
+    </button>
+    <button
+      className="flex-1 border text-white py-2.5 rounded-lg font-semibold text-sm transition-colors sora"
+      style={{ borderColor: "rgba(255,255,255,0.3)", background: "transparent" }}>
+      Free Demo
+    </button>
+  </div>
+
+</div>
         </div>
       </div>
     </section>
