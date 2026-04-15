@@ -20,7 +20,7 @@ const digitalMarketing = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075889/digital_marketing_vrlm1o.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075889/digital_marketing_vrlm1o.png",
     alt: "Advanced Digital Marketing Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -120,23 +120,23 @@ Our training approach focuses on hands-on learning through live projects and rea
 
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
-    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
-    { name: "Google Ads", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072021/GoogleAds_iqrxzt.png", alt: "Google Ads logo" } },
-    { name: "Meta Ads Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072032/MetaAdsManager_qcyh1l.png", alt: "Meta Ads Manager logo" } },
-    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
-    { name: "Ahrefs", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072017/Ahrefs_qifsrq.png", alt: "Ahrefs logo" } },
-    { name: "Mailchimp", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072030/Mailchimp_ntbgrm.webp", alt: "Mailchimp logo" } },
-    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
-    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
-    { name: "Hootsuite", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072028/Hootsuite_saazdv.png", alt: "Hootsuite logo" } },
-    { name: "ChatGPT", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
-    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
-    { name: "Hotjar", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072027/Hotjar_oyb8a8.png", alt: "Hotjar logo" } },
-    { name: "WhatsApp Business API", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072048/WhatsAppBusinessAPI_d0cmnc.webp", alt: "Hotjar logo" } },
-    { name: "Google Ad Sense", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072022/GoogleAdSense_kldzlz.png", alt: "Hotjar logo" } },
-    { name: "Bing Webmaster Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072019/BingWebmasterTool_veoxbv.png", alt: "Hotjar logo" } },
-    { name: "Google Tag Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072026/GoogleTagManager_fsrgnp.png", alt: "Hotjar logo" } },
-    { name: "Microsoft Clarity", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072032/MicrosoftClarity_l0cttp.png", alt: "Hotjar logo" } },
+    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
+    { name: "Google Ads", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/GoogleAds_iqrxzt.png", alt: "Google Ads logo" } },
+    { name: "Meta Ads Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072032/MetaAdsManager_qcyh1l.png", alt: "Meta Ads Manager logo" } },
+    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
+    { name: "Ahrefs", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/Ahrefs_qifsrq.png", alt: "Ahrefs logo" } },
+    { name: "Mailchimp", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072030/Mailchimp_ntbgrm.webp", alt: "Mailchimp logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
+    { name: "Hootsuite", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072028/Hootsuite_saazdv.png", alt: "Hootsuite logo" } },
+    { name: "ChatGPT", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
+    { name: "Hotjar", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072027/Hotjar_oyb8a8.png", alt: "Hotjar logo" } },
+    { name: "WhatsApp Business API", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072048/WhatsAppBusinessAPI_d0cmnc.webp", alt: "Hotjar logo" } },
+    { name: "Google Ad Sense", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAdSense_kldzlz.png", alt: "Hotjar logo" } },
+    { name: "Bing Webmaster Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072019/BingWebmasterTool_veoxbv.png", alt: "Hotjar logo" } },
+    { name: "Google Tag Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072026/GoogleTagManager_fsrgnp.png", alt: "Hotjar logo" } },
+    { name: "Microsoft Clarity", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072032/MicrosoftClarity_l0cttp.png", alt: "Hotjar logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -283,11 +283,11 @@ const dataAnalyst = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual data analyst assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075888/data_analyst_n3hjbv.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075888/data_analyst_n3hjbv.png",
     alt: "Data Analyst Course in Delhi - EduraIndia",
   },
   bannerImage: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075888/data_analyst_n3hjbv.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075888/data_analyst_n3hjbv.png",
     alt: "Best Data Analyst Institute in Delhi - EduraIndia",
   },
   videoPreview: "https://www.youtube.com/embed/YOUR_VIDEO_ID",
@@ -394,22 +394,22 @@ Our training approach focuses on practical learning through live projects and re
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 3 — inferred from skills and overview
   toolsCovered: [
-    { name: "Microsoft Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072035/MSexcel_kszfd0.png", alt: "Microsoft Excel logo" } },
-    { name: "Power BI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Power BI logo" } },
-    { name: "SQL / MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072046/SQL_lf0esh.png", alt: "MySQL logo" } },
-    { name: "Python (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072042/Python_brd01i.webp", alt: "Python logo" } },
-    { name: "Google Sheets", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072025/GoogleSheet_nvbk0i.png", alt: "Google Sheets logo" } },
-    { name: "Tableau (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072046/Tableu_uqwhro.png", alt: "Tableau logo" } },
-    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
-    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
-    { name: "MS Excel + Copilot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/CopilotExcel_qfg5ks.png", alt: "MS Excel + Copilot logo" } },
-    { name: "AWS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/AWS_g6uhyv.png", alt: "AWS logo" } },
-    { name: "Azure SQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072017/AzureSQL_ppvywg.png", alt: "Azure SQL logo" } },
-    { name: "VBA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072048/VBA_lspj8w.png", alt: "VBA logo" } },
-    { name: "Numpy", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072040/Numpy_yey8ev.pnghttps://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "Numpy logo" } },
-    { name: "Pandas", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072041/Pandas_v92vu1.png", alt: "Pandas logo" } },
-    { name: "Matplotlib", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072032/Matplotlib_ckjtzn.png", alt: "Matplotlib logo" } },
-    { name: "Google BigQuery  ", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072022/GoogleBigQuery_t1tojn.png", alt: "Google BigQuery logo" } },
+    { name: "Microsoft Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "Microsoft Excel logo" } },
+    { name: "Power BI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Power BI logo" } },
+    { name: "SQL / MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072046/SQL_lf0esh.png", alt: "MySQL logo" } },
+    { name: "Python (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072042/Python_brd01i.webp", alt: "Python logo" } },
+    { name: "Google Sheets", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072025/GoogleSheet_nvbk0i.png", alt: "Google Sheets logo" } },
+    { name: "Tableau (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072046/Tableu_uqwhro.png", alt: "Tableau logo" } },
+    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "MS Excel + Copilot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/CopilotExcel_qfg5ks.png", alt: "MS Excel + Copilot logo" } },
+    { name: "AWS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AWS_g6uhyv.png", alt: "AWS logo" } },
+    { name: "Azure SQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/AzureSQL_ppvywg.png", alt: "Azure SQL logo" } },
+    { name: "VBA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072048/VBA_lspj8w.png", alt: "VBA logo" } },
+    { name: "Numpy", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072040/Numpy_yey8ev.png", alt: "Numpy logo" } },
+    { name: "Pandas", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072041/Pandas_v92vu1.png", alt: "Pandas logo" } },
+    { name: "Matplotlib", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072032/Matplotlib_ckjtzn.png", alt: "Matplotlib logo" } },
+    { name: "Google BigQuery  ", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleBigQuery_t1tojn.png", alt: "Google BigQuery logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -562,7 +562,7 @@ const graphicDesign = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual graphic design assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075893/graphic_design_eqjria.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075893/graphic_design_eqjria.png",
     alt: "Graphic Design Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -673,14 +673,22 @@ Our training approach focuses on real-time projects and portfolio development so
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 4 — inferred from skills and overview
   toolsCovered: [
-    { name: "Adobe Photoshop", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072017/AdobePhotoshop_ofm8ac.png", alt: "Adobe Photoshop logo" } },
-    { name: "Adobe Illustrator", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/AdobeIllustrator_qbp1wf.png", alt: "Adobe Illustrator logo" } },
-    { name: "CorelDRAW", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776146780/coreldraw_xizgx6.png", alt: "CorelDRAW logo" } },
-    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/Canva-removebg-preview_lorpzt.pnghttps://yourdomain.com/images/tools/canva.png", alt: "Canva logo" } },
-    { name: "Adobe InDesign", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/AdobeInDesign_emcngj.png", alt: "Adobe InDesign logo" } },
-    { name: "Figma (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
-    { name: "Adobe Express", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776146960/AdobeExpress_wrsjty.png", alt: "Adobe Express logo" } },
-    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Adobe Photoshop", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/AdobePhotoshop_ofm8ac.png", alt: "Adobe Photoshop logo" } },
+    { name: "Adobe Illustrator", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AdobeIllustrator_qbp1wf.png", alt: "Adobe Illustrator logo" } },
+    { name: "CorelDRAW", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146780/coreldraw_xizgx6.png", alt: "CorelDRAW logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "Adobe InDesign", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AdobeInDesign_emcngj.png", alt: "Adobe InDesign logo" } },
+    { name: "Figma (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
+    { name: "Adobe Express", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146960/AdobeExpress_wrsjty.png", alt: "Adobe Express logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Adobe Photoshop", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/AdobePhotoshop_ofm8ac.png", alt: "Adobe Photoshop logo" } },
+    { name: "Adobe Illustrator", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AdobeIllustrator_qbp1wf.png", alt: "Adobe Illustrator logo" } },
+    { name: "CorelDRAW", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146780/coreldraw_xizgx6.png", alt: "CorelDRAW logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "Adobe InDesign", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AdobeInDesign_emcngj.png", alt: "Adobe InDesign logo" } },
+    { name: "Figma (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
+    { name: "Adobe Express", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146960/AdobeExpress_wrsjty.png", alt: "Adobe Express logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -830,7 +838,7 @@ const videoEditing = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual video editing assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075903/video_editing_pnq7oa.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075903/video_editing_pnq7oa.png",
     alt: "Video Editing Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -941,19 +949,19 @@ Our training focuses on hands-on learning and portfolio creation so students can
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 5 — inferred from skills and overview
   toolsCovered: [
-    { name: "Adobe Premiere Pro", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149576/AdobePremierePro_julkf3.png", alt: "Adobe Premiere Pro logo" } },
-    { name: "Adobe After Effects", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149576/AdobeAfterEffects_wf6evz.png", alt: "Adobe After Effects logo" } },
-    { name: "Adobe Audition", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149778/AdobeAudition_h8jwkf.png", alt: "Adobe Audition logo" } },
-    { name: "DaVinci Resolve", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149837/DaVinciResolve_tm65ub.png", alt: "DaVinci Resolve logo" } },
-    { name: "CapCut", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149901/capcut_k20v27.webp", alt: "CapCut logo" } },
-    { name: "Adobe Media Encoder", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149964/AdobeMediaEncoder_d0chpj.png", alt: "Adobe Media Encoder logo" } },
-    { name: "YouTube Studio", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776150016/YouTubeStudio_p0q2ua.webp", alt: "YouTube Studio logo" } },
-    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
-    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "ChatGPT logo" } },
-    { name: "Gemini", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149589/Gemini_n5x9gj.png", alt: "ChatGPT logo" } },
-    { name: "Freepik", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149577/Freepik_om6t5y.png", alt: "ChatGPT logo" } },
-    { name: "Adobe Podcast", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149576/AdobePodcast_uee7sf.png", alt: "ChatGPT logo" } },
-    { name: "Lenoardo AI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149590/LeonardoAi_oz2ltc.png", alt: "ChatGPT logo" } },
+    { name: "Adobe Premiere Pro", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149576/AdobePremierePro_julkf3.png", alt: "Adobe Premiere Pro logo" } },
+    { name: "Adobe After Effects", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149576/AdobeAfterEffects_wf6evz.png", alt: "Adobe After Effects logo" } },
+    { name: "Adobe Audition", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149778/AdobeAudition_h8jwkf.png", alt: "Adobe Audition logo" } },
+    { name: "DaVinci Resolve", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149837/DaVinciResolve_tm65ub.png", alt: "DaVinci Resolve logo" } },
+    { name: "CapCut", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149901/capcut_k20v27.webp", alt: "CapCut logo" } },
+    { name: "Adobe Media Encoder", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149964/AdobeMediaEncoder_d0chpj.png", alt: "Adobe Media Encoder logo" } },
+    { name: "YouTube Studio", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776150016/YouTubeStudio_p0q2ua.webp", alt: "YouTube Studio logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "ChatGPT logo" } },
+    { name: "Gemini", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149589/Gemini_n5x9gj.png", alt: "ChatGPT logo" } },
+    { name: "Freepik", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149577/Freepik_om6t5y.png", alt: "ChatGPT logo" } },
+    { name: "Adobe Podcast", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149576/AdobePodcast_uee7sf.png", alt: "ChatGPT logo" } },
+    { name: "Lenoardo AI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149590/LeonardoAi_oz2ltc.png", alt: "ChatGPT logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -1098,7 +1106,7 @@ const multimediaCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075897/multimedia_vtjmhm.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075897/multimedia_vtjmhm.png", // ⚠️ MISSING
     alt: "Multimedia & Animation Course in Delhi - EduraIndia",            // ⚠️ MISSING
   },
   bannerImage: {
@@ -1200,18 +1208,22 @@ What makes this multimedia course different is the focus on creativity with real
 
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
-    { name: "Adobe Premiere Pro", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149576/AdobePremierePro_julkf3.png", alt: "Adobe Premiere Pro logo" } },
-    { name: "Adobe After Effects", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149576/AdobeAfterEffects_wf6evz.png", alt: "Adobe After Effects logo" } },
-    { name: "Adobe Photoshop", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072017/AdobePhotoshop_ofm8ac.png", alt: "Adobe Photoshop logo" } },
-    { name: "Adobe Illustrator", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/AdobeIllustrator_qbp1wf.png", alt: "Adobe Illustrator logo" } },
-    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
-    { name: "DaVinci Resolve", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149837/DaVinciResolve_tm65ub.png", alt: "DaVinci Resolve logo" } },
-    { name: "Figma", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
-    { name: "CapCut", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776149901/capcut_k20v27.webp", alt: "CapCut logo" } },
-    { name: "Audacity", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776155083/Audacity_al7ql2.png", alt: "Audacity logo" } },
-    { name: "Blender", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776155138/Blender_q2k9zi.png", alt: "Blender logo" } },
-    { name: "Adobe Animate", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776155208/AdobeAnimate_qzzrml.png", alt: "Adobe Animate logo" } },
-    { name: "ChatGPT", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Adobe Premiere Pro", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149576/AdobePremierePro_julkf3.png", alt: "Adobe Premiere Pro logo" } },
+    { name: "Adobe After Effects", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149576/AdobeAfterEffects_wf6evz.png", alt: "Adobe After Effects logo" } },
+    { name: "Adobe Photoshop", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/AdobePhotoshop_ofm8ac.png", alt: "Adobe Photoshop logo" } },
+    { name: "Adobe Illustrator", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AdobeIllustrator_qbp1wf.png", alt: "Adobe Illustrator logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "DaVinci Resolve", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149837/DaVinciResolve_tm65ub.png", alt: "DaVinci Resolve logo" } },
+    { name: "Figma", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
+    { name: "CapCut", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149901/capcut_k20v27.webp", alt: "CapCut logo" } },
+    { name: "Adobe Photoshop", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/AdobePhotoshop_ofm8ac.png", alt: "Adobe Photoshop logo" } },
+    { name: "Audacity", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155083/Audacity_al7ql2.png", alt: "Audacity logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "Blender", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155138/Blender_q2k9zi.png", alt: "Blender logo" } },
+    { name: "Adobe Animate", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155208/AdobeAnimate_qzzrml.png", alt: "Adobe Animate logo" } },
+    { name: "ChatGPT", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Blender", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155138/Blender_q2k9zi.png", alt: "Blender logo" } },
+    { name: "CapCut", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776149901/capcut_k20v27.webp", alt: "CapCut logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -1347,7 +1359,7 @@ const businessAnalystCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075886/business_analyst_czrkdz.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075886/business_analyst_czrkdz.png", // ⚠️ MISSING
     alt: "Business Analyst Course in Delhi - EduraIndia",                        // ⚠️ MISSING
   },
   bannerImage: {
@@ -1450,19 +1462,22 @@ What sets this business analyst course apart is its focus on real-world applicat
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING in Doc 3 — suggested placeholders based on skillsCovered:
-    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
-    { name: "Microsoft Copilot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776154524/copilot_pod6uz.png", alt: "Microsoft Copilot logo" } },
-    { name: "Microsoft Power BI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Microsoft Power BI logo" } },
-    { name: "Python", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072042/Python_brd01i.webp", alt: "Python logo" } },
-    { name: "SQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072046/SQL_lf0esh.png", alt: "SQL logo" } },
-    { name: "ChatGPT", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
-    { name: "JIRA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072028/JIRA_bpcpme.png", alt: "JIRA logo" } },
-    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
-    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
-    { name: "SAP", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072045/SAP_bbdecc.webp", alt: "SAP logo" } },
-    { name: "Salesforce", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072043/SalesForce_ok8gq1.png", alt: "Salesforce logo" } },
-    { name: "AWS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/AWS_g6uhyv.png", alt: "AWS logo" } },
-    { name: "Azure", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072017/Azure_d77ppa.png", alt: "Azure logo" } },
+    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
+    { name: "Microsoft Copilot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776154524/copilot_pod6uz.png", alt: "Microsoft Copilot logo" } },
+    { name: "Microsoft Power BI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Microsoft Power BI logo" } },
+    { name: "Azure", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/Azure_d77ppa.png", alt: "Azure logo" } },
+    { name: "Python", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072042/Python_brd01i.webp", alt: "Python logo" } },
+    { name: "SQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072046/SQL_lf0esh.png", alt: "SQL logo" } },
+    { name: "ChatGPT", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "JIRA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072028/JIRA_bpcpme.png", alt: "JIRA logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "SAP", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072045/SAP_bbdecc.webp", alt: "SAP logo" } },
+    { name: "Salesforce", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072043/SalesForce_ok8gq1.png", alt: "Salesforce logo" } },
+    { name: "Microsoft Copilot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776154524/copilot_pod6uz.png", alt: "Microsoft Copilot logo" } },
+    { name: "AWS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/AWS_g6uhyv.png", alt: "AWS logo" } },
+    { name: "Azure", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/Azure_d77ppa.png", alt: "Azure logo" } },
+    { name: "JIRA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072028/JIRA_bpcpme.png", alt: "JIRA logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -1604,7 +1619,7 @@ const advancedExcelCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075884/advance_excel_ddsxme.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075884/advance_excel_ddsxme.png", // ⚠️ MISSING
     alt: "Advanced Excel with AI Course in Delhi - EduraIndia",                // ⚠️ MISSING
   },
   bannerImage: {
@@ -1707,15 +1722,24 @@ What makes this advanced excel with AI course stand out is its practical approac
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING in Doc 4 — suggested based on skillsCovered & overview:
-    { name: "VBA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072048/VBA_lspj8w.png", alt: "VBA logo" } },
-    { name: "Microsoft Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072035/MSexcel_kszfd0.png", alt: "Microsoft Excel logo" } },
-    { name: "Power Query", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072039/MSpowerquery_vftqqb.webp", alt: "Power Query logo" } },
-    { name: "Power Pivot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776155673/PivotTable_vdt7sy.png", alt: "Power Pivot logo" } },
-    { name: "ChatGPT / AI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
-    { name: "Google Sheets", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072025/GoogleSheet_nvbk0i.png", alt: "Google Sheets logo" } },
-    { name: "Microsoft 365", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776155828/Microsoft365_s3otus.png", alt: "Microsoft 365 logo" } },
-    { name: "Power BI (Basic)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Power BI logo" } },
-    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "VBA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072048/VBA_lspj8w.png", alt: "VBA logo" } },
+    { name: "Microsoft Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "Microsoft Excel logo" } },
+    { name: "Power Query", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072039/MSpowerquery_vftqqb.webp", alt: "Power Query logo" } },
+    { name: "Power Pivot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155673/PivotTable_vdt7sy.png", alt: "Power Pivot logo" } },
+    { name: "ChatGPT / AI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Google Sheets", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072025/GoogleSheet_nvbk0i.png", alt: "Google Sheets logo" } },
+    { name: "Microsoft 365", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155828/Microsoft365_s3otus.png", alt: "Microsoft 365 logo" } },
+    { name: "Power BI (Basic)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Power BI logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "VBA", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072048/VBA_lspj8w.png", alt: "VBA logo" } },
+    { name: "Microsoft Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "Microsoft Excel logo" } },
+    { name: "Power Query", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072039/MSpowerquery_vftqqb.webp", alt: "Power Query logo" } },
+    { name: "Power Pivot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155673/PivotTable_vdt7sy.png", alt: "Power Pivot logo" } },
+    { name: "ChatGPT / AI", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Google Sheets", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072025/GoogleSheet_nvbk0i.png", alt: "Google Sheets logo" } },
+    { name: "Microsoft 365", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776155828/Microsoft365_s3otus.png", alt: "Microsoft 365 logo" } },
+    { name: "Power BI (Basic)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072033/MicrosoftPowerBI_zreklg.png", alt: "Power BI logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -1857,7 +1881,7 @@ const basicComputerCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776103037/basic_alfeiv.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776103037/basic_alfeiv.png", // ⚠️ MISSING
     alt: "Basic Computer Course in Delhi - EduraIndia",                        // ⚠️ MISSING
   },
   bannerImage: {
@@ -1962,15 +1986,24 @@ What makes this basic computer course different is its simple and practical lear
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING in Doc 5 — suggested based on skillsCovered & overview:
-    { name: "MS Word", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072039/MSword_cqmcu6.png", alt: "MS Word logo" } },
-    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
-    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
-    { name: "MS Paint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072037/MSpaint_raa6ub.webp", alt: "MS Paint logo" } },
-    { name: "Google Chrome", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776156108/GoogleChrome_eelsvq.png", alt: "Google Chrome logo" } },
-    { name: "Email", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072021/Email_jwssei.png", alt: "Gmail logo" } },
-    { name: "Windows OS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072049/WindowOS_zek9k0.webp", alt: "Windows OS logo" } },
-    { name: "Notepad", image: { url: "https://yourdomain.com/images/tools/notepad.png", alt: "Notepad logo" } },
-    { name: "WordPad", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072040/Notepad_osi0qj.png", alt: "Notepad logo" } },
+    { name: "MS Word", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072039/MSword_cqmcu6.png", alt: "MS Word logo" } },
+    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "MS Paint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072037/MSpaint_raa6ub.webp", alt: "MS Paint logo" } },
+    { name: "Google Chrome", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776156108/GoogleChrome_eelsvq.png", alt: "Google Chrome logo" } },
+    { name: "Email", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/Email_jwssei.png", alt: "Gmail logo" } },
+    { name: "Windows OS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WindowOS_zek9k0.webp", alt: "Windows OS logo" } },
+    { name: "Notepad", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072040/Notepad_osi0qj.png", alt: "Notepad logo" } },
+    { name: "WordPad", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072040/Notepad_osi0qj.png", alt: "Notepad logo" } },
+    { name: "MS Word", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072039/MSword_cqmcu6.png", alt: "MS Word logo" } },
+    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "MS Paint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072037/MSpaint_raa6ub.webp", alt: "MS Paint logo" } },
+    { name: "Google Chrome", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776156108/GoogleChrome_eelsvq.png", alt: "Google Chrome logo" } },
+    { name: "Email", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/Email_jwssei.png", alt: "Gmail logo" } },
+    { name: "Windows OS", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WindowOS_zek9k0.webp", alt: "Windows OS logo" } },
+    { name: "Notepad", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072040/Notepad_osi0qj.png", alt: "Notepad logo" } },
+    { name: "WordPad", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072040/Notepad_osi0qj.png", alt: "Notepad logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -2111,7 +2144,7 @@ const seoCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075900/seo_ewiotm.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075900/seo_ewiotm.png", // ⚠️ MISSING
     alt: "SEO Course in Delhi - EduraIndia",                               // ⚠️ MISSING
   },
   bannerImage: {
@@ -2214,15 +2247,24 @@ What makes this one of the best SEO courses in India is its practical and easy-t
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING — suggested based on skillsCovered:
-    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
-    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
-    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
-    { name: "Ahrefs", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072017/Ahrefs_qifsrq.png", alt: "Ahrefs logo" } },
-    { name: "Ubersuggest", image: { url: "https://yourdomain.com/images/tools/ubersuggest.png", alt: "Ubersuggest logo" } },
-    { name: "Google Business Profile", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776156874/GoogleBusinessProfile_c3trp2.jpg", alt: "Google Business Profile logo" } },
-    { name: "Screaming Frog", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776156903/screamingFrog_ahzrst.png", alt: "Screaming Frog logo" } },
-    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
-    { name: "Google Sheet", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072025/GoogleSheet_nvbk0i.png", alt: "WordPress logo" } },
+    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
+    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
+    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
+    { name: "Ahrefs", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/Ahrefs_qifsrq.png", alt: "Ahrefs logo" } },
+    { name: "Ubersuggest", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776233297/ubersuggest_kwpltb.png", alt: "Ubersuggest logo" } },
+    { name: "Google Business Profile", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776156874/GoogleBusinessProfile_c3trp2.jpg", alt: "Google Business Profile logo" } },
+    { name: "Screaming Frog", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776156903/screamingFrog_ahzrst.png", alt: "Screaming Frog logo" } },
+    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
+    { name: "Google Sheet", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072025/GoogleSheet_nvbk0i.png", alt: "WordPress logo" } },
+    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
+    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
+    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
+    { name: "Ahrefs", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072017/Ahrefs_qifsrq.png", alt: "Ahrefs logo" } },
+    { name: "Ubersuggest", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776233297/ubersuggest_kwpltb.png", alt: "Ubersuggest logo" } },
+    { name: "Google Business Profile", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776156874/GoogleBusinessProfile_c3trp2.jpg", alt: "Google Business Profile logo" } },
+    { name: "Screaming Frog", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776156903/screamingFrog_ahzrst.png", alt: "Screaming Frog logo" } },
+    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
+    { name: "Google Sheet", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072025/GoogleSheet_nvbk0i.png", alt: "WordPress logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -2364,7 +2406,7 @@ const googleAdsCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075891/google_ads_gv7lio.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075891/google_ads_gv7lio.png", // ⚠️ MISSING
     alt: "Google Ads Course in Delhi - EduraIndia",                        // ⚠️ MISSING
   },
   bannerImage: {
@@ -2471,13 +2513,20 @@ By the time you finish, you will not just know what Google Ads is — you will k
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING — suggested based on skillsCovered:
-    { name: "Google Ads", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072021/GoogleAds_iqrxzt.png", alt: "Google Ads logo" } },
-    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
-    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
-    { name: "Google Tag Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072026/GoogleTagManager_fsrgnp.png", alt: "Google Tag Manager logo" } },
-    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
-    { name: "Unbounce", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157155/Unbounce_sxm9ht.png", alt: "Landing Page Tool logo" } },
-    { name: "Meta Ads Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072032/MetaAdsManager_qcyh1l.png", alt: "Meta Ads Manager logo" } },
+    { name: "Google Ads", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/GoogleAds_iqrxzt.png", alt: "Google Ads logo" } },
+    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
+    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
+    { name: "Google Tag Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072026/GoogleTagManager_fsrgnp.png", alt: "Google Tag Manager logo" } },
+    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
+    { name: "Unbounce", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157155/Unbounce_sxm9ht.png", alt: "Landing Page Tool logo" } },
+    { name: "Meta Ads Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072032/MetaAdsManager_qcyh1l.png", alt: "Meta Ads Manager logo" } },
+    { name: "Google Ads", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/GoogleAds_iqrxzt.png", alt: "Google Ads logo" } },
+    { name: "Google Analytics", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072022/GoogleAnalytics_jpp5vq.png", alt: "Google Analytics logo" } },
+    { name: "Google Search Console", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072024/GoogleSearchConsole_e4wzia.png", alt: "Google Search Console logo" } },
+    { name: "Google Tag Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072026/GoogleTagManager_fsrgnp.png", alt: "Google Tag Manager logo" } },
+    { name: "SEMrush", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072045/SEMrush_vlkqm8.png", alt: "SEMrush logo" } },
+    { name: "Unbounce", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157155/Unbounce_sxm9ht.png", alt: "Landing Page Tool logo" } },
+    { name: "Meta Ads Manager", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072032/MetaAdsManager_qcyh1l.png", alt: "Meta Ads Manager logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -2619,7 +2668,7 @@ const fullStackCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075906/web_development_zqs1vh.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075906/web_development_zqs1vh.png", // ⚠️ MISSING
     alt: "Full Stack Developer Course in Delhi - EduraIndia",              // ⚠️ MISSING
   },
   bannerImage: {
@@ -2730,18 +2779,20 @@ By the end of the course, you will not just know coding — you will be able to 
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING — suggested based on skillsCovered:
-    { name: "HTML5", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072027/html5_hkylls.png", alt: "HTML5 CSS3 logo" } },
-    { name: "CSS3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072019/css_cds4sd.webp", alt: "HTML5 CSS3 logo" } },
-    { name: "JavaScript", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072029/js_zjrcyz.png", alt: "JavaScript logo" } },
-    { name: "React.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157912/React_nfrh6q.png", alt: "React.js logo" } },
-    { name: "Node.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157898/nodejs_nblafs.png", alt: "Node.js logo" } },
-    { name: "MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157890/mysql_l0vvxj.png", alt: "Database logo" } },
-    { name: "MongoDB", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157877/mongodb_tzplli.png", alt: "Database logo" } },
-    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157829/git_gty8wu.svg", alt: "Git GitHub logo" } },
-    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157861/github_hggy4m.png", alt: "Git GitHub logo" } },
-    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
-    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157912/React_nfrh6q.png", alt: "Postman logo" } },
-    { name: "Chrome DevTools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157820/chromedevtools_xo4bz0.svg", alt: "Postman logo" } },
+    { name: "HTML5", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072027/html5_hkylls.png", alt: "HTML5 CSS3 logo" } },
+    { name: "CSS3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072019/css_cds4sd.webp", alt: "HTML5 CSS3 logo" } },
+    { name: "JavaScript", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072029/js_zjrcyz.png", alt: "JavaScript logo" } },
+    { name: "React.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157912/React_nfrh6q.png", alt: "React.js logo" } },
+    { name: "Node.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157898/nodejs_nblafs.png", alt: "Node.js logo" } },
+    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157912/React_nfrh6q.png", alt: "Postman logo" } },
+    { name: "MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157890/mysql_l0vvxj.png", alt: "Database logo" } },
+    { name: "MongoDB", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157877/mongodb_tzplli.png", alt: "Database logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "Git GitHub logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "Git GitHub logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157912/React_nfrh6q.png", alt: "Postman logo" } },
+    { name: "MongoDB", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157877/mongodb_tzplli.png", alt: "Database logo" } },
+    { name: "Chrome DevTools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157820/chromedevtools_xo4bz0.svg", alt: "Postman logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -2885,7 +2936,7 @@ const pythonCourse = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual Python course assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075898/python_obrsjd.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075898/python_obrsjd.png",
     alt: "Python Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -2997,16 +3048,26 @@ Choosing the right training can make a big difference in how quickly you learn a
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 6 — inferred from skills and overview
   toolsCovered: [
-    { name: "Python 3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776158419/PyCharm_zqvpls.png", alt: "Python logo" } },
-    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
-    { name: "PyCharm", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776158419/PyCharm_zqvpls.png", alt: "PyCharm logo" } },
-    { name: "Jupyter Notebook", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776158418/JupyterLogo_bkwjud.png", alt: "Jupyter Notebook logo" } },
-    { name: "Pandas", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072041/Pandas_v92vu1.png", alt: "NumPy Pandas logo" } },
-    { name: "NumPy", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072040/Numpy_yey8ev.png", alt: "NumPy Pandas logo" } },
-    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
-    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
-    { name: "MySQL (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157890/mysql_l0vvxj.png", alt: "MySQL logo" } },
-    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Python 3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776158419/PyCharm_zqvpls.png", alt: "Python logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "PyCharm", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776158419/PyCharm_zqvpls.png", alt: "PyCharm logo" } },
+    { name: "Jupyter Notebook", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776158418/JupyterLogo_bkwjud.png", alt: "Jupyter Notebook logo" } },
+    { name: "Pandas", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072041/Pandas_v92vu1.png", alt: "NumPy Pandas logo" } },
+    { name: "NumPy", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072040/Numpy_yey8ev.png", alt: "NumPy Pandas logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
+    { name: "MySQL (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157890/mysql_l0vvxj.png", alt: "MySQL logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Python 3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776158419/PyCharm_zqvpls.png", alt: "Python logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "PyCharm", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776158419/PyCharm_zqvpls.png", alt: "PyCharm logo" } },
+    { name: "Jupyter Notebook", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776158418/JupyterLogo_bkwjud.png", alt: "Jupyter Notebook logo" } },
+    { name: "Pandas", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072041/Pandas_v92vu1.png", alt: "NumPy Pandas logo" } },
+    { name: "NumPy", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072040/Numpy_yey8ev.png", alt: "NumPy Pandas logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
+    { name: "MySQL (Basics)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157890/mysql_l0vvxj.png", alt: "MySQL logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -3156,7 +3217,7 @@ const webDesigningCourse = {
 
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075905/web_design_fgdsg2.png", // ⚠️ MISSING
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075905/web_design_fgdsg2.png", // ⚠️ MISSING
     alt: "Web Designing Course in Delhi - EduraIndia",                        // ⚠️ MISSING
   },
   bannerImage: {
@@ -3265,15 +3326,24 @@ By the end of the course, you will not just understand design concepts — you w
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   toolsCovered: [
     // ⚠️ COMPLETELY MISSING — suggested based on skillsCovered:
-    { name: "Figma", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
-    { name: "Adobe XD", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776174482/AdobeXD_ixn44m.png", alt: "Adobe XD logo" } },
-    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
-    { name: "HTML5", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072027/html5_hkylls.png", alt: "HTML5 CSS3 logo" } },
-    { name: "CSS3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072019/css_cds4sd.webp", alt: "HTML5 CSS3 logo" } },
-    { name: "Bootstrap", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776174646/Bootstrap_qaiyoj.png", alt: "Bootstrap logo" } },
-    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
-    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
-    { name: "Google Fonts", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776174803/GoogleFonts_iibqip.png", alt: "Google Fonts logo" } },
+    { name: "Figma", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
+    { name: "Adobe XD", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174482/AdobeXD_ixn44m.png", alt: "Adobe XD logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "HTML5", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072027/html5_hkylls.png", alt: "HTML5 CSS3 logo" } },
+    { name: "CSS3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072019/css_cds4sd.webp", alt: "HTML5 CSS3 logo" } },
+    { name: "Bootstrap", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174646/Bootstrap_qaiyoj.png", alt: "Bootstrap logo" } },
+    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "Google Fonts", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174803/GoogleFonts_iibqip.png", alt: "Google Fonts logo" } },
+    { name: "Figma", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776146894/figma_mvfnuq.png", alt: "Figma logo" } },
+    { name: "Adobe XD", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174482/AdobeXD_ixn44m.png", alt: "Adobe XD logo" } },
+    { name: "Canva", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/Canva-removebg-preview_lorpzt.png", alt: "Canva logo" } },
+    { name: "HTML5", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072027/html5_hkylls.png", alt: "HTML5 CSS3 logo" } },
+    { name: "CSS3", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072019/css_cds4sd.webp", alt: "HTML5 CSS3 logo" } },
+    { name: "Bootstrap", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174646/Bootstrap_qaiyoj.png", alt: "Bootstrap logo" } },
+    { name: "WordPress", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072049/WordPress_f7vm23.png", alt: "WordPress logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "Google Fonts", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174803/GoogleFonts_iibqip.png", alt: "Google Fonts logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -3416,7 +3486,7 @@ const mernStack = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual MERN Stack assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075895/MERN_stack_wbnurx.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075895/MERN_stack_wbnurx.png",
     alt: "MERN Stack Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -3527,15 +3597,24 @@ Our training at EduraIndia focuses on real-world project development, so you gra
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 7 — inferred from skills and overview
   toolsCovered: [
-    { name: "MongoDB", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157877/mongodb_tzplli.png", alt: "MongoDB logo" } },
-    { name: "Express.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776174972/expressjs_t9cpxk.png", alt: "Express.js logo" } },
-    { name: "React.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157912/React_nfrh6q.png", alt: "React.js logo" } },
-    { name: "Node.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157898/nodejs_nblafs.png", alt: "Node.js logo" } },
-    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
-    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157905/postman_mkqg6r.png", alt: "Postman logo" } },
-    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
-    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
-    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "MongoDB", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157877/mongodb_tzplli.png", alt: "MongoDB logo" } },
+    { name: "Express.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174972/expressjs_t9cpxk.png", alt: "Express.js logo" } },
+    { name: "React.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157912/React_nfrh6q.png", alt: "React.js logo" } },
+    { name: "Node.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157898/nodejs_nblafs.png", alt: "Node.js logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157905/postman_mkqg6r.png", alt: "Postman logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "MongoDB", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157877/mongodb_tzplli.png", alt: "MongoDB logo" } },
+    { name: "Express.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776174972/expressjs_t9cpxk.png", alt: "Express.js logo" } },
+    { name: "React.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157912/React_nfrh6q.png", alt: "React.js logo" } },
+    { name: "Node.js", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157898/nodejs_nblafs.png", alt: "Node.js logo" } },
+    { name: "VS Code", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157920/vscode_g6a49j.png", alt: "VS Code logo" } },
+    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157905/postman_mkqg6r.png", alt: "Postman logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -3687,7 +3766,7 @@ const javaFullStack = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual Java Full Stack assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075894/java_ngylwi.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075894/java_ngylwi.png",
     alt: "Java Full Stack Developer Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -3799,16 +3878,25 @@ Choosing the right Java full stack training can make all the difference in your 
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 8 — inferred from skills and overview
   toolsCovered: [
-    { name: "Java (Core & Advanced)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776175644/java_nh8eug.png", alt: "Java logo" } },
-    { name: "Spring Boot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776175514/SpringBoot_drychl.png", alt: "Spring Boot logo" } },
-    { name: "Hibernate", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776175494/Hibernate_e2spb7.png", alt: "Hibernate logo" } },
-    { name: "MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072046/SQL_lf0esh.png", alt: "MySQL logo" } },
-    { name: "IntelliJ", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776175522/IntelliJ_yv33r7.png", alt: "IntelliJ logo" } },
-    { name: "Eclipse", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776175496/eclipse_d0sdhn.png", alt: "IntelliJ logo" } },
-    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157905/postman_mkqg6r.png", alt: "Postman logo" } },
-    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
-    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
-    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
+    { name: "Java (Core & Advanced)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175644/java_nh8eug.png", alt: "Java logo" } },
+    { name: "Spring Boot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175514/SpringBoot_drychl.png", alt: "Spring Boot logo" } },
+    { name: "Hibernate", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175494/Hibernate_e2spb7.png", alt: "Hibernate logo" } },
+    { name: "MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072046/SQL_lf0esh.png", alt: "MySQL logo" } },
+    { name: "IntelliJ", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175522/IntelliJ_yv33r7.png", alt: "IntelliJ logo" } },
+    { name: "Eclipse", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175496/eclipse_d0sdhn.png", alt: "IntelliJ logo" } },
+    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157905/postman_mkqg6r.png", alt: "Postman logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
+    { name: "Java (Core & Advanced)", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175644/java_nh8eug.png", alt: "Java logo" } },
+    { name: "Spring Boot", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175514/SpringBoot_drychl.png", alt: "Spring Boot logo" } },
+    { name: "Hibernate", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175494/Hibernate_e2spb7.png", alt: "Hibernate logo" } },
+    { name: "MySQL", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072046/SQL_lf0esh.png", alt: "MySQL logo" } },
+    { name: "IntelliJ", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175522/IntelliJ_yv33r7.png", alt: "IntelliJ logo" } },
+    { name: "Eclipse", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776175496/eclipse_d0sdhn.png", alt: "IntelliJ logo" } },
+    { name: "Postman", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157905/postman_mkqg6r.png", alt: "Postman logo" } },
+    { name: "GitHub", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157861/github_hggy4m.png", alt: "GitHub logo" } },
+    { name: "Git", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776157829/git_gty8wu.svg", alt: "GitHub logo" } },
+    { name: "ChatGPT / AI Tools", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072018/ChatGPT_d3ybhl.webp", alt: "ChatGPT logo" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
@@ -3957,7 +4045,7 @@ const adcaCourse = {
   // ── 2. MEDIA ─────────────────────────────────────────────────────
   // ⚠️ PLACEHOLDER — update with actual ADCA course assets
   thumbnail: {
-    url: "https://res.cloudinary.com/de846sdih/image/upload/v1776075884/advance_computer_wdtuwu.png",
+    url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776075884/advance_computer_wdtuwu.png",
     alt: "ADCA Course in Delhi - EduraIndia",
   },
   bannerImage: {
@@ -4069,14 +4157,22 @@ Selecting the right ADCA training can significantly impact your career readiness
   // ── 11. TOOLS COVERED ─────────────────────────────────────────────
   // ⚠️ NOT in Doc 9 — inferred from skills and overview
   toolsCovered: [
-    { name: "MS Word", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072039/MSword_cqmcu6.png", alt: "MS Word logo" } },
-    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
-    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
-    { name: "MS Access", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072034/MSaccess_sf5ytm.png", alt: "MS Access logo" } },
-    { name: "Tally Prime", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776176218/tallyPrime_yc3gmu.avif", alt: "Tally Prime logo" } },
-    { name: "Google Workspace", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776176208/GOOGLE_itxded.png", alt: "Google Workspace logo" } },
-    { name: "Internet", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072027/internet_mkjbad.png", alt: "Internet & Email icon" } },
-    { name: "Email", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/v1776072021/Email_jwssei.png", alt: "Internet & Email icon" } },
+    { name: "MS Word", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072039/MSword_cqmcu6.png", alt: "MS Word logo" } },
+    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "MS Access", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072034/MSaccess_sf5ytm.png", alt: "MS Access logo" } },
+    { name: "Tally Prime", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776176218/tallyPrime_yc3gmu.avif", alt: "Tally Prime logo" } },
+    { name: "Google Workspace", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776176208/GOOGLE_itxded.png", alt: "Google Workspace logo" } },
+    { name: "Internet", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072027/internet_mkjbad.png", alt: "Internet & Email icon" } },
+    { name: "Email", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/Email_jwssei.png", alt: "Internet & Email icon" } },
+    { name: "MS Word", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072039/MSword_cqmcu6.png", alt: "MS Word logo" } },
+    { name: "MS Excel", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072035/MSexcel_kszfd0.png", alt: "MS Excel logo" } },
+    { name: "MS PowerPoint", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072038/MSpowerpoint_uihney.png", alt: "MS PowerPoint logo" } },
+    { name: "MS Access", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072034/MSaccess_sf5ytm.png", alt: "MS Access logo" } },
+    { name: "Tally Prime", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776176218/tallyPrime_yc3gmu.avif", alt: "Tally Prime logo" } },
+    { name: "Google Workspace", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776176208/GOOGLE_itxded.png", alt: "Google Workspace logo" } },
+    { name: "Internet", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072027/internet_mkjbad.png", alt: "Internet & Email icon" } },
+    { name: "Email", image: { url: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776072021/Email_jwssei.png", alt: "Internet & Email icon" } },
   ],
 
   // ── 12. KEY TAKEAWAYS ─────────────────────────────────────────────
