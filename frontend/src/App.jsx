@@ -15,6 +15,7 @@ import WhatsAppBtn from "./components/common/WhatsAppBtn";
 import Footer from "./components/common/Footer";
 import NotFound from "./NotFound";
 import Blogs from "./Blogs";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   const [showEnquiry,  setShowEnquiry]  = useState(false)
@@ -26,6 +27,7 @@ export default function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <TopBar />
         <AlertPopup
           onEnquiryClick={openEnquiry}

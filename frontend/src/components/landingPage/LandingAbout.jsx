@@ -75,40 +75,15 @@ export default function LandingAbout() {
           </h1>
 
           {/* Description */}
-          <p className="ani-3 text-[15.5px] text-[#5A6A8A] font-medium leading-[1.82] max-w-[520px] mx-auto mb-10">
+          {/* <p className="ani-3 text-[15.5px] text-[#5A6A8A] font-medium leading-[1.82] max-w-[520px] mx-auto mb-10">
             At <strong className="text-[#0D1E42] font-bold">EduraIndia</strong>, we are recognised as a
             professional computer training institute offering{" "}
             <strong className="text-[#0D1E42] font-bold">practical skills</strong> and{" "}
             <strong className="text-[#0D1E42] font-bold">professional development</strong> for both
             beginners and advanced learners — with expert guidance and strong career opportunities.
-          </p>
+          </p> */}
 
-          {/* ── Stat cards ── */}
-          <div className="ani-4 grid grid-cols-3 gap-4 mb-9">
-            {[
-              { num: "10+",   label: "Courses Offered",  delay: "float-1" },
-              { num: "5000+", label: "Students Trained", delay: "float-2" },
-              { num: "95%",   label: "Placement Rate",   delay: "float-3" },
-            ].map(({ num, label, delay }) => (
-              <div
-                key={label}
-                className={`${delay} bg-[#F4F7FF] border border-[#DDE5F8] rounded-2xl py-5 px-3 text-center`}
-              >
-                <div
-                  className="font-black text-[#094E93] leading-none mb-1.5 font-jakarta"
-                  style={{ fontSize: "clamp(28px,5vw,38px)", }}
-                >
-                  {num}
-                </div>
-                <div className="text-[11.5px] font-bold text-[#5A6A8A] uppercase tracking-[0.05em]">
-                  {label}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* ── About SEO box ── */}
-          <div className="ani-5 bg-[#F4F7FF] border border-[#DDE5F8] rounded-[18px] px-6 sm:px-7 py-6 text-left">
+          <div className="ani-5 bg-[#F4F7FF] border border-[#DDE5F8] rounded-[18px] px-6 sm:px-7 py-6 text-left  mb-9">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-[10px] bg-[#EBF1FF] flex items-center justify-center flex-shrink-0">
                 <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#094E93" strokeWidth={2}>
@@ -134,6 +109,33 @@ export default function LandingAbout() {
             </div>
           </div>
 
+
+          {/* ── Stat cards ── */}
+          <div className="ani-4 grid grid-cols-3 gap-4">
+            {[
+              { num: "10+",   label: "Courses Offered",  delay: "float-1" },
+              { num: "5000+", label: "Students Trained", delay: "float-2" },
+              { num: "95%",   label: "Placement Rate",   delay: "float-3" },
+            ].map(({ num, label, delay }) => (
+              <div
+                key={label}
+                className={`${delay} bg-[#F4F7FF] border border-[#DDE5F8] rounded-2xl py-5 px-3 text-center`}
+              >
+                <div
+                  className="font-black text-[#094E93] leading-none mb-1.5 font-jakarta"
+                  style={{ fontSize: "clamp(28px,5vw,38px)", }}
+                >
+                  {num}
+                </div>
+                <div className="text-[11.5px] font-bold text-[#5A6A8A] uppercase tracking-[0.05em]">
+                  {label}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* ── About SEO box ── */}
+          
         </div>
       </section>
     </>

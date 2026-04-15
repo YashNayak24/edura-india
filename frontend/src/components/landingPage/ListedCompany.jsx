@@ -3,27 +3,30 @@ const KF = `
   @keyframes companiesRev { 0% { transform:translateX(-50%) } 100% { transform:translateX(0) } }
 `
 
-/* ── Company data — replace logo URLs with your actual assets ── */
+const optimizeImage = (url) => {
+  return url.replace('/upload/', '/upload/f_auto,q_auto,w_120/');
+};
+
 const ROW1 = [
-    { name: "Asian Paints", logo: null },
-    { name: "Bajaj Finserv", logo: null },
-    { name: "Birlasoft", logo: null },
-    { name: "Hero", logo: null },
-    { name: "Kotak Mahindra", logo: null },
-    { name: "Tech Mahindra", logo: null },
-    { name: "Maruti Suzuki", logo: null },
-    { name: "Muthoot Finance", logo: null },
+    { name: "Asian Paints",   logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075815/asianPaints_g3dukh.jpg") },
+    { name: "Bajaj Finserv",  logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075816/bajajFinser_yxxpx6.png") },
+    { name: "Birlasoft",      logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075817/birlasoft_dkamcf.png") },
+    { name: "Hero",           logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075824/hero_vvpxg1.png") },
+    { name: "Kotak Mahindra", logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075825/kotakMahindra_lccvnd.png") },
+    { name: "Tech Mahindra",  logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075831/techMahindra_i0qzbt.png") },
+    { name: "Maruti Suzuki",  logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075826/marutiSuzuki_exspuz.png") },
+    { name: "Muthoot Finance",logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075828/muthootFinance_xnohmw.png") },
 ]
 
 const ROW2 = [
-    { name: "BluEnt", logo: null },
-    { name: "DTDC", logo: null },
-    { name: "Pidilite", logo: null },
-    { name: "Altitude Software", logo: null },
-    { name: "Ogilvy", logo: null },
-    { name: "WPP", logo: null },
-    { name: "Dentsu", logo: null },
-    { name: "Flipkart", logo: null },
+    { name: "BluEnt",             logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075819/BluEnt_rdrsow.png") },
+    { name: "DTDC",               logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075821/DTDC_qxk36i.png") },
+    { name: "Pidilite",           logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075830/Pidilite_fpiac9.png") },
+    { name: "Altitude Software",  logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075814/Altitude_Software_e2s5oj.jpg") },
+    { name: "Ogilvy",             logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075828/Ogilvy_akssy6.png") },
+    { name: "WPP",                logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075832/WPP_pw60us.png") },
+    { name: "Dentsu",             logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075820/Dentsu_f2ytn8.png") },
+    { name: "Flipkart",           logo: optimizeImage("https://res.cloudinary.com/de846sdih/image/upload/v1776075823/Flipkart_xnm9vw.webp") },
 ]
 
 /* ── Single company card ── */
@@ -31,14 +34,14 @@ function CompanyCard({ company }) {
     return (
         <div className="bg-white border border-[#DDE5F8] rounded-[18px] px-5 py-4
       flex items-center gap-3 min-w-[220px] flex-shrink-0 cursor-default
-      transition-all duration-200 hover:border-[#094E93] hover:shadow-[0_8px_24px_rgba(9,78,147,0.12)]
+      transition-all duration-200 hover:scale-105 hover:shadow-[0_8px_24px_rgba(9,78,147,0.12)]
       group">
             {company.logo ? (
                 <img
                     src={company.logo}
                     alt={company.name}
                     className="h-9 w-auto max-w-[80px] object-contain flex-shrink-0
-            grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
+             transition-all duration-300 group-hover:scale-105"
                 />
             ) : (
                 /* Fallback initials avatar when no logo */
@@ -80,10 +83,10 @@ export default function HiringCompanies() {
         <>
             <style>{KF}</style>
 
-            <section className="pt-10 py-16 overflow-hidden"
+            <section className="pt-6 pb-20 overflow-hidden"
                 style={{ background: "#eef4fb" }}>
 
-                <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
+                <div className="max-w-[1280px] mx-auto ">
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
                         {/* ── LEFT: Text card ── */}
@@ -100,7 +103,7 @@ export default function HiringCompanies() {
                                 <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full pointer-events-none"
                                 />
 
-                                <div className="relative z-10">
+                                <div className="relative z-10 flex flex-col items-center">
                                     {/* Tag */}
                                     <div className="inline-flex items-center gap-2 bg-[#DBEAFE] 
                     text-[#094E93] text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-[0.08em] mb-6">

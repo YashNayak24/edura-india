@@ -93,8 +93,8 @@ export default function PlacementNews() {
           <div className="marquee-track" style={{ paddingBlock: "10px" }}>
             {doubled.map((s, i) => (
               <div key={`${s.id}-${i}`}
-                className="flex items-center gap-[14px]
-                  rounded-[22px] px-[22px] py-4 mx-[9px]
+                className="flex items-center gap-[40px]
+                  rounded-[22px] px-[30px] py-4 mx-[9px]
                   cursor-default select-none
                   transition-all duration-[250ms]
                   hover:-translate-y-[3px]

@@ -1,25 +1,25 @@
-import { useState }    from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CATEGORIES }  from "./courseData";  // sirf CATEGORIES aur DURATIONS ke liye — course data nahi
+import { CATEGORIES } from "./courseData";  // sirf CATEGORIES aur DURATIONS ke liye — course data nahi
 
 // ─── Badge colors map (badgeType ki jagah badge string use hota hai) ─
 const BADGE_COLOR = {
   "Most Popular": "rgba(9,78,147,0.9)",
-  "Hot":          "rgba(220,38,38,0.9)",
-  "New":          "rgba(245,166,35,0.9)",
-  "Trending":     "rgba(5,150,105,0.9)",
-  "Bestseller":   "rgba(124,58,237,0.9)",
-  "High Demand":  "rgba(219,39,119,0.9)",
+  "Hot": "rgba(220,38,38,0.9)",
+  "New": "rgba(245,166,35,0.9)",
+  "Trending": "rgba(5,150,105,0.9)",
+  "Bestseller": "rgba(124,58,237,0.9)",
+  "High Demand": "rgba(219,39,119,0.9)",
 };
 
 // ─── Category gradients ───────────────────────────────────────────
 const CAT_GRADIENT = {
-  "Digital Marketing":  "linear-gradient(135deg,#059669,#34D399)",
-  "Design":             "linear-gradient(135deg,#7C3AED,#A78BFA)",
-  "Coding":             "linear-gradient(135deg,#DB2777,#F472B6)",
-  "AI":                 "linear-gradient(135deg,#D97706,#FBBF24)",
-  "Accounting & Finance":"linear-gradient(135deg,#094E93,#4D8BFF)",
-  "default":            "linear-gradient(135deg,#094E93,#0A5FAD)",
+  "Digital Marketing": "linear-gradient(135deg,#059669,#34D399)",
+  "Design": "linear-gradient(135deg,#7C3AED,#A78BFA)",
+  "Coding": "linear-gradient(135deg,#DB2777,#F472B6)",
+  "AI": "linear-gradient(135deg,#D97706,#FBBF24)",
+  "Accounting & Finance": "linear-gradient(135deg,#094E93,#4D8BFF)",
+  "default": "linear-gradient(135deg,#094E93,#0A5FAD)",
 };
 
 // ─── Duration label ───────────────────────────────────────────────
@@ -28,9 +28,9 @@ const durLabel = (d) => d || "—";
 // ─── Download icon ────────────────────────────────────────────────
 const DownloadIcon = () => (
   <svg viewBox="0 0 24 24" className="w-[14px] h-[14px]" fill="none" stroke="white" strokeWidth={2.5}>
-    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-    <polyline points="7 10 12 15 17 10"/>
-    <line x1="12" y1="15" x2="12" y2="3"/>
+    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+    <polyline points="7 10 12 15 17 10" />
+    <line x1="12" y1="15" x2="12" y2="3" />
   </svg>
 );
 
@@ -38,13 +38,13 @@ const DownloadIcon = () => (
 function SkeletonCard() {
   return (
     <div className="bg-white border border-[#DDE5F8] rounded-[18px] overflow-hidden animate-pulse">
-      <div className="h-[160px] bg-[#E8EEFF]"/>
+      <div className="h-[160px] bg-[#E8EEFF]" />
       <div className="p-[16px_18px_18px] flex flex-col gap-3">
-        <div className="h-3 bg-[#E8EEFF] rounded w-1/3"/>
-        <div className="h-4 bg-[#E8EEFF] rounded w-3/4"/>
-        <div className="h-3 bg-[#E8EEFF] rounded w-full"/>
-        <div className="h-3 bg-[#E8EEFF] rounded w-5/6"/>
-        <div className="h-8 bg-[#E8EEFF] rounded-lg mt-2"/>
+        <div className="h-3 bg-[#E8EEFF] rounded w-1/3" />
+        <div className="h-4 bg-[#E8EEFF] rounded w-3/4" />
+        <div className="h-3 bg-[#E8EEFF] rounded w-full" />
+        <div className="h-3 bg-[#E8EEFF] rounded w-5/6" />
+        <div className="h-8 bg-[#E8EEFF] rounded-lg mt-2" />
       </div>
     </div>
   );
@@ -52,10 +52,10 @@ function SkeletonCard() {
 
 // ─── Course Card ──────────────────────────────────────────────────
 function CourseCard({ course, listView }) {
-  const navigate  = useNavigate();
-  const gradient  = CAT_GRADIENT[course.category] || CAT_GRADIENT["default"];
-  const badgeBg   = BADGE_COLOR[course.badge]     || "rgba(9,78,147,0.9)";
-  const thumbUrl  = course.thumbnail?.url;
+  const navigate = useNavigate();
+  const gradient = CAT_GRADIENT[course.category] || CAT_GRADIENT["default"];
+  const badgeBg = BADGE_COLOR[course.badge] || "rgba(9,78,147,0.9)";
+  const thumbUrl = course.thumbnail?.url;
 
   return (
     <div
@@ -71,11 +71,11 @@ function CourseCard({ course, listView }) {
         ${listView ? "w-[220px] min-w-[220px]" : "h-[160px]"}`}>
 
         {thumbUrl ? (
-          <img src={thumbUrl} alt={course.thumbnail.alt} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[400ms] group-hover:scale-[1.07]"/>
+          <img src={thumbUrl} alt={course.thumbnail.alt} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[400ms] group-hover:scale-[1.07]" />
         ) : (
-          <div className="absolute inset-0 transition-transform duration-[400ms] group-hover:scale-[1.07]" style={{ background: gradient }}/>
+          <div className="absolute inset-0 transition-transform duration-[400ms] group-hover:scale-[1.07]" style={{ background: gradient }} />
         )}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/28"/>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/28" />
 
         {course.badge && (
           <span className="absolute top-3 left-3 z-10 text-[9.5px] font-extrabold tracking-[0.07em]
@@ -102,7 +102,7 @@ function CourseCard({ course, listView }) {
           {course.rating?.average > 0 && (
             <div className="flex items-center gap-[5px]">
               <svg viewBox="0 0 24 24" className="w-3 h-3" fill="#094E93">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
               <span className="text-[11.5px] font-extrabold text-[#0D1E42]">{course.rating.average}</span>
             </div>
@@ -115,22 +115,43 @@ function CourseCard({ course, listView }) {
         </div>
 
         {/* Description */}
-        <div className={`text-[12.5px] text-[#5A6A8A] font-medium leading-[1.65] mb-[14px] flex-1
+        {/* <div className={`text-[12.5px] text-[#5A6A8A] font-medium leading-[1.65] mb-[14px] flex-1
           ${listView ? "line-clamp-2" : ""}`}>
           {course.description}
+        </div> */}
+
+        <div className="mb-[14px] flex-1">
+
+          <p className={`text-[12.5px] text-[#5A6A8A] font-medium leading-[1.65] m-0
+
+    ${listView ? "line-clamp-2" : "line-clamp-4"}`}>
+
+            {course.description}
+
+          </p>
+
+          {!listView && (
+
+            <span className="text-[11.5px] font-bold text-[#094E93] cursor-default mt-[5px] block">
+
+              Read more...</span>
+
+          )}
+
         </div>
+
 
         {/* Meta pills */}
         <div className="flex flex-wrap gap-[6px] mb-3">
           {course.duration && (
             <div className="flex items-center gap-1 bg-[#F4F7FF] border border-[#DDE5F8] rounded-[6px] px-[9px] py-[3px] text-[11px] font-semibold text-[#5A6A8A]">
-              <svg viewBox="0 0 24 24" className="w-3 h-3" fill="none" stroke="#5A6A8A" strokeWidth={2}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg viewBox="0 0 24 24" className="w-3 h-3" fill="none" stroke="#5A6A8A" strokeWidth={2}><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
               {course.duration}
             </div>
           )}
           {course.mode && (
             <div className="flex items-center gap-1 bg-[#F4F7FF] border border-[#DDE5F8] rounded-[6px] px-[9px] py-[3px] text-[11px] font-semibold text-[#5A6A8A]">
-              <svg viewBox="0 0 24 24" className="w-3 h-3" fill="none" stroke="#5A6A8A" strokeWidth={2}><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <svg viewBox="0 0 24 24" className="w-3 h-3" fill="none" stroke="#5A6A8A" strokeWidth={2}><path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" /></svg>
               {course.mode}
             </div>
           )}
@@ -172,7 +193,7 @@ function CourseCard({ course, listView }) {
                 text-[12px] font-bold cursor-pointer transition-all duration-[180ms]
                 hover:-translate-y-px hover:shadow-[0_6px_16px_rgba(9,78,147,0.35)] whitespace-nowrap no-underline"
               style={{ background: "#094E93", boxShadow: "0 3px 10px rgba(9,78,147,0.25)", fontFamily: "inherit" }}>
-              <DownloadIcon/>
+              <DownloadIcon />
               Download Brochure
             </a>
           )}
@@ -184,14 +205,14 @@ function CourseCard({ course, listView }) {
 
 // ══ MAIN EXPORT ════════════════════════════════════════════════════
 export default function CoursesGrid({ courses, loading, error, search, onSearch, cat, onClearCat, onClearDur }) {
-  const [sortBy,   setSortBy]   = useState("popular");
+  const [sortBy, setSortBy] = useState("popular");
   const [listView, setListView] = useState(false);
 
   const catLabel = CATEGORIES.find(c => c.val === cat)?.label || "All Categories";
 
   const sorted = [...courses].sort((a, b) => {
-    if (sortBy === "rating")   return (b.rating?.average || 0) - (a.rating?.average || 0);
-    if (sortBy === "newest")   return new Date(b.createdAt) - new Date(a.createdAt);
+    if (sortBy === "rating") return (b.rating?.average || 0) - (a.rating?.average || 0);
+    if (sortBy === "newest") return new Date(b.createdAt) - new Date(a.createdAt);
     if (sortBy === "students") return (b.studentsEnrolled || 0) - (a.studentsEnrolled || 0);
     return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);  // popular default
   });
@@ -202,7 +223,7 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
       {/* ── Search bar ── */}
       <div className="relative mb-4">
         <svg viewBox="0 0 24 24" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none" fill="none" stroke="#8A9ABF" strokeWidth={2}>
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
         <input
           type="text"
@@ -217,7 +238,7 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
         {search && (
           <button onClick={() => onSearch("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8A9ABF] hover:text-[#0D1E42] bg-transparent border-none cursor-pointer p-0">
             <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5}>
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
         )}
@@ -251,8 +272,8 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
           {/* Grid / List toggle */}
           <div className="flex gap-1">
             {[
-              { mode: false, icon: <><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></> },
-              { mode: true,  icon: <><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></> },
+              { mode: false, icon: <><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></> },
+              { mode: true, icon: <><line x1="8" y1="6" x2="21" y2="6" /><line x1="8" y1="12" x2="21" y2="12" /><line x1="8" y1="18" x2="21" y2="18" /><line x1="3" y1="6" x2="3.01" y2="6" /><line x1="3" y1="12" x2="3.01" y2="12" /><line x1="3" y1="18" x2="3.01" y2="18" /></> },
             ].map(({ mode, icon }) => (
               <button key={String(mode)} onClick={() => setListView(mode)}
                 className="w-8 h-8 rounded-[7px] border-[1.5px] flex items-center justify-center cursor-pointer transition-all duration-150"
@@ -272,7 +293,7 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
             text-[#094E93] text-[11.5px] font-bold px-[10px] py-1 rounded-full cursor-pointer hover:bg-[#D6E4FF]">
           {catLabel}
           <svg viewBox="0 0 24 24" className="w-[11px] h-[11px]" fill="none" stroke="#094E93" strokeWidth={2.5}>
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </span>
       </div>
@@ -280,7 +301,7 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
       {/* ── States: loading / error / empty / cards ── */}
       {loading ? (
         <div className={`grid gap-[18px] ${listView ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"}`}>
-          {[1, 2, 3, 4, 5, 6].map(i => <SkeletonCard key={i}/>)}
+          {[1, 2, 3, 4, 5, 6].map(i => <SkeletonCard key={i} />)}
         </div>
       ) : error ? (
         <div className="text-center py-16">
@@ -291,7 +312,7 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
         <div className="text-center py-16">
           <div className="w-16 h-16 bg-[#F4F7FF] rounded-[16px] mx-auto mb-4 flex items-center justify-center">
             <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="#8A9ABF" strokeWidth={1.5}>
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
           </div>
           <div className="text-[18px] font-extrabold text-[#0D1E42] mb-2">No courses found</div>
@@ -299,7 +320,7 @@ export default function CoursesGrid({ courses, loading, error, search, onSearch,
         </div>
       ) : (
         <div className={`grid gap-[18px] ${listView ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"}`}>
-          {sorted.map(c => <CourseCard key={c._id} course={c} listView={listView}/>)}
+          {sorted.map(c => <CourseCard key={c._id} course={c} listView={listView} />)}
         </div>
       )}
 

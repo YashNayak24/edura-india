@@ -281,16 +281,25 @@ export default function HeroSection() {
         </h1>
 
         {/* Sub */}
-        <p className="text-[#5A6A8A] font-medium leading-[1.72] max-w-[520px] mx-auto mb-8"
+        {/* <p className="text-[#5A6A8A] font-medium leading-[1.72] max-w-[520px] mx-auto mb-8"
           style={{ fontSize: "clamp(13px, 1.4vw, 17px)" }}>
           From <strong className="text-[#0D1E42] font-bold">Coding &amp; Web Dev</strong> to{" "}
           <strong className="text-[#0D1E42] font-bold">Digital Marketing, Graphic Design</strong> and{" "}
           <strong className="text-[#0D1E42] font-bold">Stock Market</strong> — Edura offers
           industry-ready courses with 100% placement assistance.
-        </p>
+        </p> */}
+
+        <p className="ani-3 text-[15.5px] text-[#5A6A8A] font-medium leading-[1.82] max-w-[520px] mx-auto mb-4">
+            At <strong className="text-[#0D1E42] font-bold">EduraIndia</strong>, we are recognised as a
+            professional computer training institute offering{" "}
+            <strong className="text-[#0D1E42] font-bold">practical skills</strong> and{" "}
+            <strong className="text-[#0D1E42] font-bold">professional development</strong> for both
+            beginners and advanced learners — with expert guidance and strong career opportunities.
+          </p>
+
 
         {/* CTAs */}
-        <div className="flex gap-3 justify-center flex-wrap mb-10">
+        <div className="flex gap-3 justify-center flex-wrap mb-8">
           <button
             onClick={scrollToDemo}
             className="inline-flex items-center gap-2 text-white rounded-[12px]

@@ -209,7 +209,7 @@ const filters = [
 const courses = [
   {
     cat: 'computer',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776103037/basic_alfeiv.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776103037/basic_alfeiv.png',
     label: 'Computer', labelColor: '#094E93',
     rating: '4.7', title: 'Basic Computer Course',
     desc: 'Master the fundamentals — MS Office, internet basics, email, typing, and essential computer operations.',
@@ -219,7 +219,7 @@ const courses = [
   },
   {
     cat: 'computer',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075884/advance_computer_wdtuwu.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075884/advance_computer_wdtuwu.png',
     label: 'Computer', labelColor: '#4F46E5',
     rating: '4.8', title: 'Advanced Computer Course',
     desc: 'Advanced Excel, Tally, accounting software, hardware fundamentals, and networking essentials.',
@@ -229,7 +229,7 @@ const courses = [
   },
   {
     cat: 'design',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075893/graphic_design_eqjria.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075893/graphic_design_eqjria.png',
     label: 'Design', labelColor: '#7C3AED',
     rating: '4.9', title: 'Graphic Designing',
     desc: 'Master visual storytelling — logos, branding, posters, social media creatives using industry tools.',
@@ -239,7 +239,7 @@ const courses = [
   },
   {
     cat: 'design',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075903/video_editing_pnq7oa.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075903/video_editing_pnq7oa.png',
     label: 'Design', labelColor: '#DC2626',
     rating: '4.8', title: 'Video Editing',
     desc: 'Professional video editing — reels, YouTube content, ads, and cinematic edits using industry-standard tools.',
@@ -249,7 +249,7 @@ const courses = [
   },
   {
     cat: 'marketing',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075889/digital_marketing_vrlm1o.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075889/digital_marketing_vrlm1o.png',
     label: 'Marketing', labelColor: '#059669',
     rating: '4.8', title: 'Digital Marketing',
     desc: 'Master SEO, social media, Google Ads, and content strategy — become a complete digital marketer.',
@@ -259,7 +259,7 @@ const courses = [
   },
   {
     cat: 'design',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075905/web_design_fgdsg2.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075905/web_design_fgdsg2.png',
     label: 'Web Dev', labelColor: '#DB2777',
     rating: '4.9', title: 'Web Design',
     desc: 'Design stunning responsive websites using Figma, HTML, CSS — master UI/UX principles and prototyping.',
@@ -269,7 +269,7 @@ const courses = [
   },
   {
     cat: 'coding',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075906/web_development_zqs1vh.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075906/web_development_zqs1vh.png',
     label: 'Web Dev', labelColor: '#0369A1',
     rating: '4.9', title: 'Web Development',
     desc: 'Build full-stack websites — front-end with React, back-end with Node.js, and deploy real-world projects.',
@@ -279,7 +279,7 @@ const courses = [
   },
   {
     cat: 'data',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075888/data_analyst_n3hjbv.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075888/data_analyst_n3hjbv.png',
     label: 'Data', labelColor: '#0D9488',
     rating: '4.9', title: 'Data Analyst',
     desc: 'Master Excel, SQL, Python, Power BI, and Tableau to extract insights and drive data-backed decisions.',
@@ -289,7 +289,7 @@ const courses = [
   },
   {
     cat: 'coding',
-    img: 'https://res.cloudinary.com/de846sdih/image/upload/v1776075894/java_ngylwi.png',
+    img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075894/java_ngylwi.png',
     label: 'Java', labelColor: '#B45309',
     rating: '4.8', title: 'Java Programming',
     desc: 'Build strong OOP foundations, data structures, and real-world Java applications from scratch.',
@@ -386,7 +386,7 @@ export default function Courses() {
               {/* <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.38)' }} /> */}
 
               {/* Badge top-left */}
-              <div className="absolute top-5 left-5 z-10 bg-white/[0.18] border border-white/30 text-white px-3 py-1 rounded text-[10px] font-bold tracking-[0.06em] backdrop-blur-sm">
+              <div className="absolute top-5 left-5 z-10 bg-black/25 border border-white/30 text-white px-3 py-1 rounded text-[10px] font-bold tracking-[0.06em] backdrop-blur-sm">
                 {current.badge}
               </div>
               {/* Duration top-right */}
@@ -396,12 +396,12 @@ export default function Courses() {
 
               {/* Icon + title + rating */}
               <div className="relative z-10 flex flex-col items-center">
-                <div className="w-[110px] h-[110px] rounded-full bg-white/15 border-2 border-white/25 flex items-center justify-center backdrop-blur-sm mb-5"
+                <div className="w-[110px] h-[110px] rounded-full bg-black/25 border-2 border-white/25 flex items-center justify-center backdrop-blur-sm mb-5"
                   // style={{ color: current.labelColor, background: current.labelColor + '15' }}
                 >
                   <ThumbIcon />
                 </div>
-                <div className="bg-white/[0.18] border border-white/[0.28] text-white px-4 py-2 rounded-full text-[13px] font-bold tracking-[0.04em] backdrop-blur-sm text-center max-w-[240px]">
+                <div className="bg-black/25 border border-white/[0.28] text-white px-4 py-2 rounded-full text-[13px] font-bold tracking-[0.04em] backdrop-blur-sm text-center max-w-[240px]">
                   {current.title}
                 </div>
                 <div className="mt-4 flex items-center gap-1.5 bg-black/20 text-white px-3 py-1 rounded-full text-[12px] font-bold backdrop-blur-sm">
@@ -415,7 +415,7 @@ export default function Courses() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={goPrev}
-                    className="w-8 h-8 rounded-full bg-white/20 border border-white/35 text-white flex items-center justify-center hover:bg-white/35 transition-all cursor-pointer backdrop-blur-sm"
+                    className="w-8 h-8 rounded-full bg-black/25 border border-white/35 text-white flex items-center justify-center hover:bg-white/35 transition-all cursor-pointer backdrop-blur-sm"
                   >
                     <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round">
                       <polyline points="10,3 5,8 10,13" />
@@ -423,7 +423,7 @@ export default function Courses() {
                   </button>
                   <button
                     onClick={goNext}
-                    className="w-8 h-8 rounded-full bg-white/20 border border-white/35 text-white flex items-center justify-center hover:bg-white/35 transition-all cursor-pointer backdrop-blur-sm"
+                    className="w-8 h-8 rounded-full bg-black/25 border border-white/35 text-white flex items-center justify-center hover:bg-white/35 transition-all cursor-pointer backdrop-blur-sm"
                   >
                     <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round">
                       <polyline points="6,3 11,8 6,13" />

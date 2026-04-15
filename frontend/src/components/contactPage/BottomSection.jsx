@@ -38,7 +38,7 @@ export default function BottomSection() {
           className="block relative group"
         >
           <img
-            src="/images/map_image.png"
+            src="https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto/v1776177618/map_image_fapcty.png"
             alt="Edura location map — E-89, Block E, Kalkaji, New Delhi"
             className="w-full h-[220px] sm:h-[260px] md:h-[300px] object-cover object-center"
           />

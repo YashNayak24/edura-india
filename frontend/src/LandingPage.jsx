@@ -18,8 +18,8 @@ export default function LandingPage({ onEnquiryClick }) {
       {/* <Carousel /> */}
       <HeroSection />
       <PlacementNews />
-      <LandingAbout/>
       <WhyChoose onEnquiryClick={onEnquiryClick} />
+      <LandingAbout/>
       <Guidance />
       <ListedCompany />
       {/* <Affiliations/> */}
