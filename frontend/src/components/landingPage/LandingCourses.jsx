@@ -126,7 +126,6 @@ const IcoDataA = () => (
 );
 const IcoJavaIcon = () => (
   <svg viewBox="0 0 48 48" width="52" height="52" fill="none">
-    {/* Steam - 3 wavy lines */}
     <path
       d="M18 8 Q16.5 6.5 18 5 Q19.5 3.5 18 2"
       fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round"
@@ -139,30 +138,19 @@ const IcoJavaIcon = () => (
       d="M30 8 Q28.5 6.5 30 5 Q31.5 3.5 30 2"
       fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round"
     />
-
-    {/* Cup body - tapered shape */}
     <path
       d="M13 13 L15 34 Q15 36 24 36 Q33 36 33 34 L35 13 Z"
       fill="white" fillOpacity="0.92"
     />
-
-    {/* Horizontal ripple lines inside cup */}
     <path d="M16 18 Q20 16.5 28 18 Q32 19 32 19" fill="none" stroke="#094E93" strokeWidth="1.3" strokeLinecap="round" opacity="0.4"/>
     <path d="M15.5 22 Q20 20.5 28.5 22 Q32 23 32.5 23" fill="none" stroke="#094E93" strokeWidth="1.3" strokeLinecap="round" opacity="0.4"/>
     <path d="M15.5 26 Q20 24.5 28.5 26 Q32 27 32.5 27" fill="none" stroke="#094E93" strokeWidth="1.3" strokeLinecap="round" opacity="0.4"/>
-
-    {/* Handle */}
     <path
       d="M33 17 Q40 17 40 22.5 Q40 28 33 28"
       fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round"
     />
-
-    {/* Saucer - ellipse base */}
     <ellipse cx="24" cy="37.5" rx="11" ry="2.2" fill="white" fillOpacity="0.85"/>
-    {/* Saucer outer rim */}
     <ellipse cx="24" cy="38.5" rx="13.5" ry="2.5" fill="none" stroke="white" strokeWidth="1.6" strokeOpacity="0.7"/>
-
-    {/* Saucer bottom swirl line */}
     <path
       d="M14 41 Q19 43.5 24 43 Q29 42.5 34 41"
       fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.6"
@@ -177,7 +165,7 @@ const thumbIcons = {
   'Video Editing': IcoVideo,
   'Digital Marketing': IcoDigital,
   'Web Design': IcoWebDesign,
-  'Web Development': IcoWebDev2,
+  'Full Stack Development': IcoWebDev2,
   'Data Analyst': IcoDataA,
   'Java Programming': IcoJavaIcon,
 };
@@ -201,14 +189,13 @@ const filters = [
   { key: 'design',    label: 'Design',      Icon: IcoDesign },
   { key: 'coding',    label: 'Coding',      Icon: IcoCoding },
   { key: 'marketing', label: 'Marketing',   Icon: IcoMarketing },
-  // { key: 'webdev',    label: 'Web Dev',     Icon: IcoWebDev },
   { key: 'data',      label: 'Data',        Icon: IcoData },
-  // { key: 'java',      label: 'Java',        Icon: IcoJava },
 ];
 
 const courses = [
   {
     cat: 'computer',
+    slug: 'basic-computer-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776103037/basic_alfeiv.png',
     label: 'Computer', labelColor: '#094E93',
     rating: '4.7', title: 'Basic Computer Course',
@@ -219,6 +206,7 @@ const courses = [
   },
   {
     cat: 'computer',
+    slug: 'adca-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075884/advance_computer_wdtuwu.png',
     label: 'Computer', labelColor: '#4F46E5',
     rating: '4.8', title: 'Advanced Computer Course',
@@ -229,6 +217,7 @@ const courses = [
   },
   {
     cat: 'design',
+    slug: 'graphic-design-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075893/graphic_design_eqjria.png',
     label: 'Design', labelColor: '#7C3AED',
     rating: '4.9', title: 'Graphic Designing',
@@ -239,6 +228,7 @@ const courses = [
   },
   {
     cat: 'design',
+    slug: 'video-editing-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075903/video_editing_pnq7oa.png',
     label: 'Design', labelColor: '#DC2626',
     rating: '4.8', title: 'Video Editing',
@@ -249,6 +239,7 @@ const courses = [
   },
   {
     cat: 'marketing',
+    slug: 'digital-marketing-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075889/digital_marketing_vrlm1o.png',
     label: 'Marketing', labelColor: '#059669',
     rating: '4.8', title: 'Digital Marketing',
@@ -259,6 +250,7 @@ const courses = [
   },
   {
     cat: 'design',
+    slug: 'web-designing-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075905/web_design_fgdsg2.png',
     label: 'Web Dev', labelColor: '#DB2777',
     rating: '4.9', title: 'Web Design',
@@ -269,9 +261,10 @@ const courses = [
   },
   {
     cat: 'coding',
+    slug: 'full-stack-developer-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075906/web_development_zqs1vh.png',
     label: 'Web Dev', labelColor: '#0369A1',
-    rating: '4.9', title: 'Web Development',
+    rating: '4.9', title: 'Full Stack Development',
     desc: 'Build full-stack websites — front-end with React, back-end with Node.js, and deploy real-world projects.',
     duration: '4-6 Months', badge: 'HIGH DEMAND',
     tags: ['HTML/CSS', 'JavaScript', 'React', 'Node.js'],
@@ -279,6 +272,7 @@ const courses = [
   },
   {
     cat: 'data',
+    slug: 'data-analyst-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075888/data_analyst_n3hjbv.png',
     label: 'Data', labelColor: '#0D9488',
     rating: '4.9', title: 'Data Analyst',
@@ -289,6 +283,7 @@ const courses = [
   },
   {
     cat: 'coding',
+    slug: 'java-full-stack-course-delhi',
     img: 'https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_1200/v1776075894/java_ngylwi.png',
     label: 'Java', labelColor: '#B45309',
     rating: '4.8', title: 'Java Programming',
@@ -297,7 +292,6 @@ const courses = [
     tags: ['Core Java', 'OOPs', 'Collections', 'JDBC'],
     highlights: ['Strong Logic Building', 'OOP Mastery', 'Interview Prep'],
   },
-  
 ];
 
 export default function Courses() {
@@ -382,9 +376,6 @@ export default function Courses() {
                 backgroundPosition: 'center',
               }}
             >
-              {/* Dark overlay */}
-              {/* <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.38)' }} /> */}
-
               {/* Badge top-left */}
               <div className="absolute top-5 left-5 z-10 bg-black/25 border border-white/30 text-white px-3 py-1 rounded text-[10px] font-bold tracking-[0.06em] backdrop-blur-sm">
                 {current.badge}
@@ -396,9 +387,7 @@ export default function Courses() {
 
               {/* Icon + title + rating */}
               <div className="relative z-10 flex flex-col items-center">
-                <div className="w-[110px] h-[110px] rounded-full bg-black/25 border-2 border-white/25 flex items-center justify-center backdrop-blur-sm mb-5"
-                  // style={{ color: current.labelColor, background: current.labelColor + '15' }}
-                >
+                <div className="w-[110px] h-[110px] rounded-full bg-black/25 border-2 border-white/25 flex items-center justify-center backdrop-blur-sm mb-5">
                   <ThumbIcon />
                 </div>
                 <div className="bg-black/25 border border-white/[0.28] text-white px-4 py-2 rounded-full text-[13px] font-bold tracking-[0.04em] backdrop-blur-sm text-center max-w-[240px]">
@@ -512,9 +501,13 @@ export default function Courses() {
                   </div>
 
                   <div className="flex gap-2.5 flex-1 sm:justify-end">
-                    <button className="bg-transparent text-[#094E93] border-2 border-[#DDE5F8] rounded-[10px] px-5 py-2.5 text-[13px] font-bold font-jakarta cursor-pointer hover:border-[#094E93] hover:bg-[#EBF1FF] transition-all">
-                      Details
-                    </button>
+                    {/* ── Details button — navigates to course detail page ── */}
+                    <Link to={`/courses/${current.slug}`}>
+                      <button className="bg-transparent text-[#094E93] border-2 border-[#DDE5F8] rounded-[10px] px-5 py-2.5 text-[13px] font-bold font-jakarta cursor-pointer hover:border-[#094E93] hover:bg-[#EBF1FF] transition-all">
+                        Details
+                      </button>
+                    </Link>
+
                     <button
                       onClick={scrollToDemo}
                       className="bg-[#094E93] text-white border-0 rounded-[10px] px-5 py-2.5 text-[13px] font-bold font-jakarta cursor-pointer hover:bg-[#073E75] transition-all"

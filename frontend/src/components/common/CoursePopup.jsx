@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 
 const courses = [
-  { id: 1, image: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776177616/coding_b99b9m.png", route: "/courses/mern-stack-course-delhi", title: "Coding" },
+  { id: 1, image: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776177616/coding_b99b9m.png", route: "courses/full-stack-developer-course-delhi", title: "Coding" },
   { id: 2, image: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776177607/data_analyst_zhrd9v.png", route: "/courses/data-analyst-course-delhi", title: "Data Analyst" },
   { id: 3, image: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776177619/digital_marketing_h6mjpq.png", route: "/courses/digital-marketing-course-delhi", title: "Digital Marketing" },
   { id: 4, image: "https://res.cloudinary.com/de846sdih/image/upload/f_auto,q_auto,w_800/v1776177620/graphic_design_bkd7kf.png", route: "/courses/web-designing-course-delhi", title: "Graphic Design" },
