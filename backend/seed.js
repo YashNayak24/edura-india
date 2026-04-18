@@ -3,6 +3,7 @@ const Course = require("./models/Course");
 require("dotenv").config();
 
 
+//all courses data in json form...
 
 const digitalMarketing = {
 
@@ -265,6 +266,7 @@ Our training approach focuses on hands-on learning through live projects and rea
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [],
 };
+
 
 const dataAnalyst = {
 
@@ -542,9 +544,8 @@ Our training approach focuses on practical learning through live projects and re
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [],
 };
-// ─────────────────────────────────────────────────────────────────
-//  COURSE 1 — SEO Mastery Course
-// ─────────────────────────────────────────────────────────────────
+
+
 const graphicDesign = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -818,9 +819,8 @@ Our training approach focuses on real-time projects and portfolio development so
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [],
 };
-// ─────────────────────────────────────────────────────────────────
-//  COURSE 2 — Social Media Marketing Course
-// ─────────────────────────────────────────────────────────────────
+
+
 const videoEditing = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -1090,9 +1090,8 @@ Our training focuses on hands-on learning and portfolio creation so students can
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [],
 };
-// ─────────────────────────────────────────────────────────────────
-//  COURSE 3 — Google Ads (PPC) Course
-// ─────────────────────────────────────────────────────────────────
+
+
 const multimediaCourse = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -1605,7 +1604,6 @@ What sets this business analyst course apart is its focus on real-world applicat
 };
 
 
-
 const advancedExcelCourse = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -1865,7 +1863,6 @@ What makes this advanced excel with AI course stand out is its practical approac
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [], // ⚠️ MISSING
 };
-
 
 
 const basicComputerCourse = {
@@ -2130,7 +2127,6 @@ What makes this basic computer course different is its simple and practical lear
 };
 
 
-
 const seoCourse = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -2392,7 +2388,6 @@ What makes this one of the best SEO courses in India is its practical and easy-t
 };
 
 
-
 const googleAdsCourse = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -2651,8 +2646,6 @@ By the time you finish, you will not just know what Google Ads is — you will k
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [], // ⚠️ MISSING
 };
-
-
 
 
 const fullStackCourse = {
@@ -3203,7 +3196,6 @@ Choosing the right training can make a big difference in how quickly you learn a
 };
 
 
-
 const webDesigningCourse = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -3747,8 +3739,6 @@ Our training at EduraIndia focuses on real-world project development, so you gra
 };
 
 
-
-
 const javaFullStack = {
 
   // ── 1. BASIC INFO ────────────────────────────────────────────────
@@ -4025,7 +4015,6 @@ Choosing the right Java full stack training can make all the difference in your 
   // ── 21. RELATED COURSES ───────────────────────────────────────────
   relatedCourses: [],
 };
-
 
 
 const adcaCourse = {
