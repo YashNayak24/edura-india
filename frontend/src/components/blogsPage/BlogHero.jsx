@@ -121,7 +121,7 @@ export default function BlogHero() {
         className="relative overflow-hidden"
         style={{
           background: 'linear-gradient(160deg, #050E1F 0%, #091B40 30%, #0B2860 55%, #0A3A85 100%)',
-          paddingTop: 'clamp(70px, 12vw, 150px)',
+          paddingTop: '150px',
           paddingBottom: 'clamp(50px, 8vw, 80px)',
           paddingLeft: '20px',
           paddingRight: '20px',
