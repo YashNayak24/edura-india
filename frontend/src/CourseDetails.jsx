@@ -185,7 +185,7 @@ function LoadingSkeleton() {
 }
 
 /* ══ HERO SECTION ════════════════════════════════════════════════ */
-function HeroSection({ course }) {
+function HeroSection({ course, onEnquiryClick, onBookDemoClick }) {
   const [ref, visible] = useFadeIn();
   return (
     <section ref={ref} className={`bg-white pt-[150px] px-4 sm:px-6 lg:px-10 py-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
@@ -304,45 +304,48 @@ function HeroSection({ course }) {
           </div>
 
           <div className="rounded-2xl p-5 text-white"
-     style={{ background: "linear-gradient(135deg, #094E93 0%, #0d1b3e 100%)" }}>
+            style={{ background: "linear-gradient(135deg, #094E93 0%, #0d1b3e 100%)" }}>
 
-  {/* Quote Icon */}
-  <div>
-    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#f59e0b" style={{ opacity: 0.85 }}>
-      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-    </svg>
-  </div>
+            {/* Quote Icon */}
+            <div>
+              <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#f59e0b" style={{ opacity: 0.85 }}>
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              </svg>
+            </div>
 
-  {/* Category label */}
-  <p className="text-xs italic mt-1.5 mb-0.5" style={{ color: "rgba(255,255,255,0.6)" }}>
-    Career Guidance
-  </p>
+            {/* Category label */}
+            <p className="text-xs italic mt-1.5 mb-0.5" style={{ color: "rgba(255,255,255,0.6)" }}>
+              Career Guidance
+            </p>
 
-  {/* Heading */}
-  <h2 className="text-2xl font-black leading-tight mb-1">
-    Talk to an expert — chart your career path today
-  </h2>
+            {/* Heading */}
+            <h2 className="text-2xl font-black leading-tight mb-1">
+              Talk to an expert — chart your career path today
+            </h2>
 
-  {/* Subtext */}
-  <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.6)" }}>
-    Free 30-min session with certified counsellors
-  </p>
+            {/* Subtext */}
+            <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.6)" }}>
+              Free 30-min session with certified counsellors
+            </p>
 
-  {/* Buttons */}
-  <div className="flex gap-2.5">
-    <button
-      className="flex-1 text-white py-2.5 rounded-lg font-bold text-sm transition-all duration-200"
-      style={{ background: "linear-gradient(135deg, #094E93, #0A5FAD)" }}>
-      Enquiry Now!
-    </button>
-    <button
-      className="flex-1 border text-white py-2.5 rounded-lg font-semibold text-sm transition-colors sora"
-      style={{ borderColor: "rgba(255,255,255,0.3)", background: "transparent" }}>
-      Free Demo
-    </button>
-  </div>
+            {/* Buttons */}
+            <div className="flex gap-2.5">
+              <button
+                onClick={onEnquiryClick}
+                className="flex-1 text-white py-2.5 rounded-lg font-bold text-sm transition-all duration-200"
+                style={{ background: "linear-gradient(135deg, #094E93, #0A5FAD)" }}>
+                Enquiry Now!
+              </button>
+              <button
+                onClick={onBookDemoClick}
+                className="flex-1 border text-white py-2.5 rounded-lg font-semibold text-sm transition-colors sora"
+                style={{ borderColor: "rgba(255,255,255,0.3)", background: "transparent" }}>
+                Free Demo
+              </button>
 
-</div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -712,10 +715,14 @@ function FAQSection({ course }) {
               className="flex items-center gap-2 border border-[#094E93] text-[#094E93] px-4 py-2 rounded-xl text-xs font-bold sora hover:bg-[#094E93] hover:text-white transition-all duration-200 no-underline">
               <PhoneIcon className="w-3.5 h-3.5" /> Call Now
             </a>
-            <button className="flex items-center gap-2 text-white px-4 py-2 rounded-xl text-xs font-bold sora transition-all duration-200 hover:-translate-y-0.5"
+            <a href="https://wa.me/919217489565?text=Hi%2C%20I%20have%20a%20question%20about%20your%20courses."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white px-4 py-2 rounded-xl text-xs font-bold sora transition-all duration-200 hover:-translate-y-0.5 no-underline"
               style={{ background: "linear-gradient(135deg, #094E93, #0A5FAD)" }}>
               <MailIcon className="w-3.5 h-3.5" /> WhatsApp Us
-            </button>
+            </a>
+
           </div>
         </div>
       </div>
@@ -787,7 +794,7 @@ function FooterCTA({ course, onBookDemoClick, onCounsellingClick }) {
 }
 
 /* ══ MAIN EXPORT ═════════════════════════════════════════════════ */
-export default function CourseDetails({ onBookDemoClick }) {
+export default function CourseDetails({ onBookDemoClick, onEnquiryClick }) {
   const { slug } = useParams();
   const { course, loading, error } = useCourse(slug);
   const navigate = useNavigate();
@@ -817,7 +824,11 @@ export default function CourseDetails({ onBookDemoClick }) {
     <div className="dm-sans bg-[#f5f7ff] text-slate-800 overflow-x-hidden">
       <GlobalStyles />
       <CourseDetailSEO course={course} />
-      <HeroSection course={course} />
+      <HeroSection
+        course={course}
+        onEnquiryClick={onEnquiryClick}
+        onBookDemoClick={onBookDemoClick}
+      />
       {/* ✅ counsellingRef pass kiya */}
       <OverviewSection course={course} counsellingRef={counsellingRef} />
       <SkillsSection course={course} />

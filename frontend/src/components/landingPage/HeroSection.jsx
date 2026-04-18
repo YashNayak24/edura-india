@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 /* ─── Keyframes ─────────────────────────────────────────────────────────────── */
 const KF = `
   @keyframes floatA {
@@ -155,7 +155,7 @@ export default function HeroSection() {
     // setOpen(false); // mobile menu band karne ke liye
   };
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden flex items-center justify-center px-6 pt-[150px] pb-10">
+    <section className="relative min-h-[700px] bg-white overflow-hidden flex items-center justify-center px-6 pt-[150px] pb-10 sm:min-h-screen">
       <style>{KF}</style>
 
       {/* ── BG layers ── */}
@@ -290,12 +290,12 @@ export default function HeroSection() {
         </p> */}
 
         <p className="ani-3 text-[15.5px] text-[#5A6A8A] font-medium leading-[1.82] max-w-[520px] mx-auto mb-4">
-            At <strong className="text-[#0D1E42] font-bold">EduraIndia</strong>, we are recognised as a
-            professional computer training institute offering{" "}
-            <strong className="text-[#0D1E42] font-bold">practical skills</strong> and{" "}
-            <strong className="text-[#0D1E42] font-bold">professional development</strong> for both
-            beginners and advanced learners — with expert guidance and strong career opportunities.
-          </p>
+          At <strong className="text-[#0D1E42] font-bold">EduraIndia</strong>, we are recognised as a
+          professional computer training institute offering{" "}
+          <strong className="text-[#0D1E42] font-bold">practical skills</strong> and{" "}
+          <strong className="text-[#0D1E42] font-bold">professional development</strong> for both
+          beginners and advanced learners — with expert guidance and strong career opportunities.
+        </p>
 
 
         {/* CTAs */}
@@ -338,7 +338,7 @@ export default function HeroSection() {
           <Stat num="4.9" accent="★" label="Rating" noBorder />
         </div>
 
-        
+
 
       </div>
     </section>
