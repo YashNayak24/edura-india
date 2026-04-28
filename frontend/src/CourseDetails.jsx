@@ -609,7 +609,8 @@ function JourneySection({ course }) {
             <TrendingUpIcon className="w-3.5 h-3.5" /> Your Path Forward
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d1b3e] mt-2 sora">
-            Your <span className="text-[#094E93]">Career Journey</span> in Digital Marketing
+            From <span className="text-[#094E93]">Course to Career</span>
+
           </h2>
         </div>
 

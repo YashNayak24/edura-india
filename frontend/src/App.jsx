@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";  // ← useEffect add karo
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import TopBar from './components/common/TopBar';
@@ -9,20 +9,27 @@ import CourseDetails from './CourseDetails';
 import About from './About';
 import EnquiryPopup from "./components/common/EnquiryPopup";
 import AlertPopup from "./components/common/AlertPopup";
-import BookDemoModal from "./components/common/BookDemoModal";   // ← import
+import BookDemoModal from "./components/common/BookDemoModal";
 import CoursePopup from "./components/common/CoursePopup";
 import WhatsAppBtn from "./components/common/WhatsAppBtn";
 import Footer from "./components/common/Footer";
 import NotFound from "./NotFound";
 import Blogs from "./Blogs";
 import ScrollToTop from "./ScrollToTop";
+import { prefetchCourse } from "./utils/courseCache"; // ← ADD
 
 export default function App() {
   const [showEnquiry,  setShowEnquiry]  = useState(false)
-  const [showBookDemo, setShowBookDemo] = useState(false)   // ← naya state
+  const [showBookDemo, setShowBookDemo] = useState(false)
+
+  // ✅ ADD — App load hote hi background mein fetch
+  useEffect(() => {
+    prefetchCourse("digital-marketing-course-delhi");
+    prefetchCourse("full-stack-developer-course-delhi");
+  }, []);
 
   const openEnquiry  = () => setShowEnquiry(true)
-  const openBookDemo = () => setShowBookDemo(true)          // ← naya handler
+  const openBookDemo = () => setShowBookDemo(true)
 
   return (
     <>
@@ -31,7 +38,7 @@ export default function App() {
         <TopBar />
         <AlertPopup
           onEnquiryClick={openEnquiry}
-          onBookDemoClick={openBookDemo}     
+          onBookDemoClick={openBookDemo}
         />
         <CoursePopup />
         <Navbar onEnquiryClick={openEnquiry} />
@@ -40,7 +47,7 @@ export default function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About onBookDemoClick={openBookDemo} />} />
           <Route path="/courses" element={<Courses />} />
-            <Route path="/courses/:slug" element={<CourseDetails onEnquiryClick={openEnquiry} onBookDemoClick={openBookDemo} />} />
+          <Route path="/courses/:slug" element={<CourseDetails onEnquiryClick={openEnquiry} onBookDemoClick={openBookDemo} />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="*" element={<NotFound onBookDemoClick={openBookDemo} />} />
         </Routes>
@@ -48,7 +55,7 @@ export default function App() {
           open={showEnquiry}
           onClose={() => setShowEnquiry(false)}
         />
-        <BookDemoModal                         
+        <BookDemoModal
           open={showBookDemo}
           onClose={() => setShowBookDemo(false)}
         />
