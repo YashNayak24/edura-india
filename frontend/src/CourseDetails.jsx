@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useCourse } from "./Usecourses";
 import BookDemoForm from "./components/common/BookDemoForm";
+import AlumniReviews from "./components/landingPage/AlumniReviews";
 
 /* ═══════════════════════════════════════════════════
    BRAND COLORS
@@ -837,6 +838,7 @@ export default function CourseDetails({ onBookDemoClick, onEnquiryClick }) {
       <TakeawaysSection course={course} />
       <CareerSection course={course} onCounsellingClick={scrollToCounselling} />
       <JourneySection course={course} />
+      <AlumniReviews/>
       <FAQSection course={course} />
       {/* ✅ onCounsellingClick pass kiya */}
       <FooterCTA
