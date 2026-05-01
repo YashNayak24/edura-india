@@ -7,6 +7,10 @@
     {
       "source": "/robots.txt",
       "destination": "https://edura-india.onrender.com/robots.txt"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
