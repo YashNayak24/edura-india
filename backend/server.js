@@ -1,30 +1,32 @@
 // server.js
-const express  = require("express");
+const express = require("express");
 const mongoose = require("mongoose");
-const cors     = require("cors");
+const cors = require("cors");
 require("dotenv").config();
 
-const courseRoutes  = require("./routes/courses");
-const seoRoutes     = require("./routes/seo");
+const courseRoutes = require("./routes/courses");
+const seoRoutes = require("./routes/seo");
 const enquiryRoutes = require("./routes/enquiry");   // ← NEW
 
-const app  = express();
+const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ─── Middleware ────────────────────────────────────────────────────────────
-app.use(cors({ origin: [
+app.use(cors({
+  origin: [
     "http://localhost:5173",
     "https://edura-india.vercel.app",
     "https://www.eduraindia.com",
     "https://eduraindia.com"
   ],
-  credentials: true }));
+  credentials: true
+}));
 app.use(express.json());
 
 // ─── Routes ───────────────────────────────────────────────────────────────
-app.use("/api/courses",  courseRoutes);
-app.use("/api/enquiry",  enquiryRoutes);  // ← NEW  (3 endpoints inside)
-app.use("/",             seoRoutes);      // sitemap.xml & robots.txt
+app.use("/api/courses", courseRoutes);
+app.use("/api/enquiry", enquiryRoutes);  // ← NEW  (3 endpoints inside)
+app.use("/", seoRoutes);      // sitemap.xml & robots.txt
 
 // ─── Health check ─────────────────────────────────────────────────────────
 app.get("/api/health", (_, res) => res.json({ status: "ok" }));
@@ -54,6 +56,19 @@ mongoose
     await mongoose.connection.db.admin().ping();
     console.log("DB warmed up ✅");
 
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+
+      const BACKEND_URL = process.env.BACKEND_URL || "https://edura-india.onrender.com";
+
+      setInterval(async () => {
+        try {
+          await fetch(`${BACKEND_URL}/api/health`);
+          console.log("Self-ping ✅", new Date().toLocaleTimeString());
+        } catch (err) {
+          console.error("Self-ping failed ❌", err.message);
+        }
+      }, 5 * 60 * 1000);
+    });
   })
   .catch((err) => console.error("DB connection error:", err));
