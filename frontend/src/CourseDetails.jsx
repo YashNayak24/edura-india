@@ -233,14 +233,14 @@ function HeroSection({ course, onEnquiryClick, onBookDemoClick }) {
 
           <div className={`text-slate-500 text-base leading-relaxed mb-6 dm-sans ${visible ? "animate-fadeUp" : ""}`} style={{ animationDelay: "0.3s" }}>
             <p>{course.description}</p>
-            {course.overview?.description && (
-              <p className="mt-3">{course.overview.description.split("\n\n")[0]}</p>
+            {course.description2 && (
+              <p className="mt-3">{course.description2}</p>
             )}
           </div>
 
-          {course.overview?.description && (
+          {course.descriptionHighlight && (
             <div className={`bg-[#EEF4FB] border-l-4 border-[#094E93] rounded-r-xl p-4 mb-7 italic text-slate-700 text-sm leading-relaxed dm-sans ${visible ? "animate-slideRight" : ""}`} style={{ animationDelay: "0.35s" }}>
-              {course.overview.description.split("\n\n").slice(-1)[0]}
+              {course.descriptionHighlight}
             </div>
           )}
 

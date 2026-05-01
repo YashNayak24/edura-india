@@ -271,8 +271,7 @@ export default function Footer() {
               </div>
 
               <p style={{ fontSize: 12.5, color: 'rgba(255,255,255,0.42)', lineHeight: 1.8, marginBottom: 18, maxWidth: 260 }}>
-                A premier training organisation committed to empowering learners with future-ready skills — trusted by 20,000+ students across Delhi NCR.
-              </p>
+                Edura India is a trusted training institute in Delhi offering job-oriented courses with hands-on training, 100% placement support, and experienced trainers to help you build job-ready skills.              </p>
 
               {/* Trust badges */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 22 }}>
