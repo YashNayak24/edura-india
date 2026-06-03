@@ -16,7 +16,7 @@ function SLabel({ children }) {
 const BRANCHES = [
   {
     type: "Branch Office", tag: "Branch", tagBg: "#F3EEFF", tagColor: "#7C3AED",
-    addr: "E-89, Block E, Kalkaji, New Delhi, Delhi 110019",
+    addr: "B-6/7, Pocket D, Okhla Phase II, Okhla Industrial Estate, New Delhi, Delhi 110020",
     phone: "+91 92174 89565", tel: "tel:+919217489565"
   },
 ];

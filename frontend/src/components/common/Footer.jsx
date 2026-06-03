@@ -371,7 +371,7 @@ export default function Footer() {
                     <circle cx="12" cy="10" r="3" />
                   </svg>
                   <span style={{ fontSize: 12.5, color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>
-                    E-89, Block E, Kalkaji,<br />New Delhi, Delhi 110019
+                    B-6/7, Pocket D, Okhla Phase II,<br/>Okhla Industrial Estate,<br/>New Delhi, Delhi 110020
                   </span>
                 </div>
 
