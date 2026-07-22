@@ -1,0 +1,2 @@
+import { NextResponse } from 'next/server';import { resendOTP } from '../../../../lib/enquiries';
+export const runtime='nodejs';export async function POST(request){try{const r=await resendOTP(await request.json());return NextResponse.json(r.body,{status:r.status})}catch{return NextResponse.json({success:false,message:'Server error'},{status:500})}}

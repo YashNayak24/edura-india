@@ -1,0 +1,1 @@
+"use client";import {useSiteActions} from '../SiteShell';import LandingPage from '../LandingPage';export default function HomeView(){const a=useSiteActions();return <LandingPage onEnquiryClick={a.openEnquiry}/>}

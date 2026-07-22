@@ -1,0 +1,1 @@
+"use client";import {useSiteActions} from '../SiteShell';import CourseDetails from '../CourseDetails';export default function CourseView({initialCourse}){const a=useSiteActions();return <CourseDetails initialCourse={initialCourse} onEnquiryClick={a.openEnquiry} onBookDemoClick={a.openBookDemo}/>}

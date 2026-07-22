@@ -1,0 +1,1 @@
+"use client";import {useSiteActions} from '../SiteShell';import NotFound from '../NotFound';export default function NotFoundView(){const a=useSiteActions();return <NotFound onEnquiryClick={a.openEnquiry} onBookDemoClick={a.openBookDemo}/>}

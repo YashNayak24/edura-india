@@ -1,0 +1,6 @@
+import { NextResponse } from 'next/server';
+import { connectDB } from '../../../../lib/db';
+import Course from '../../../../models/Course';
+export async function GET(_request,{params}){try{await connectDB();const {slug}=await params;const data=await Course.findOne({slug,isActive:true}).lean();return data?NextResponse.json({success:true,data}):NextResponse.json({success:false,message:'Course not found'},{status:404})}catch(e){return NextResponse.json({success:false,message:e.message},{status:500})}}
+export async function PUT(request,{params}){try{await connectDB();const {slug}=await params;const data=await Course.findOneAndUpdate({$or:[{slug},{_id:/^[a-f\d]{24}$/i.test(slug)?slug:null}]},await request.json(),{new:true,runValidators:true});return data?NextResponse.json({success:true,data}):NextResponse.json({success:false,message:'Course not found'},{status:404})}catch(e){return NextResponse.json({success:false,message:e.message},{status:400})}}
+export async function DELETE(_request,{params}){try{await connectDB();const {slug}=await params;await Course.findOneAndUpdate({$or:[{slug},{_id:/^[a-f\d]{24}$/i.test(slug)?slug:null}]},{isActive:false});return NextResponse.json({success:true,message:'Course deactivated'})}catch(e){return NextResponse.json({success:false,message:e.message},{status:500})}}
